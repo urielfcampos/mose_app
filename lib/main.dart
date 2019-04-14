@@ -1,8 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/animation.dart';
+import 'about.dart';
 
 void main() {
   runApp(MaterialApp(
+    title: 'MOSE APP',
+    theme: ThemeData(
+        // Define the default Brightness and Colors
+
+        // Define the default Font Family
+        fontFamily: 'Montserrat',
+
+        // Define the default TextTheme. Use this to specify the default
+        // text styling for headlines, titles, bodies of text, and more.
+        textTheme: TextTheme(
+          headline: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold,),
+          title: TextStyle(fontSize: 30.0, fontStyle: FontStyle.italic, color: Colors.white),
+          body1: TextStyle(fontSize: 16.0, fontFamily: 'Hind',),
+        )),
     home: MoseApp(),
   ));
 }
@@ -61,8 +76,8 @@ class _MoseAppState extends State<MoseApp> with SingleTickerProviderStateMixin {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0)),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => StackOfCards()));
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => About()));
               },
             ),
           ),
@@ -103,114 +118,5 @@ class _MoseAppState extends State<MoseApp> with SingleTickerProviderStateMixin {
   void dispose() {
     controller.dispose();
     super.dispose();
-  }
-}
-
-class StackOfCards extends StatefulWidget {
-  @override
-  _StackOfCardsState createState() => _StackOfCardsState();
-}
-
-class _StackOfCardsState extends State<StackOfCards> {
-  double topValue1 = 20;
-  double topValue2 = 40;
-  double topValue3 = 60;
-
-  bool expanded = false;
-
-  void expandCardContents(int cardPosition) {
-    setState(() {
-      if (expanded) {
-        switch (cardPosition) {
-          case 1:
-            topValue2 = topValue2 - 260;
-            topValue3 = topValue3 - 260;
-            expanded = false;
-        }
-      } else {
-        switch (cardPosition) {
-          case 1:
-            topValue2 = topValue2 + 260;
-            topValue3 = topValue3 + 260;
-            expanded = true;
-        }
-      }
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("MOSE"),
-        centerTitle: true,
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.more_vert),
-            onPressed: () {},
-          )
-        ],
-      ),
-      body: Stack(
-        alignment: Alignment.center,
-        children: <Widget>[
-          Positioned(
-              top: topValue1,
-              child: Card(
-                  elevation: 8,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Container(
-                    height: 300,
-                    width: 300,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        InkWell(
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadiusDirectional.vertical(
-                                    top: Radius.circular(10),
-                                    bottom: Radius.circular(0))),
-                            child: Text(
-                              "SOMETHING",
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                          onTap: () {
-                            print("SOMETHING");
-                            expandCardContents(1);
-                          },
-                        ),
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
-                          child: Text(
-                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
-                        )
-                      ],
-                    ),
-                  ))),
-          Positioned(
-              top: topValue2,
-              child: Card(
-                elevation: 8,
-                color: Color.fromARGB(255, 255, 0, 0),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
-                child: Container(width: 300, height: 300),
-              )),
-          Positioned(
-              top: topValue3,
-              child: Card(
-                elevation: 8,
-                color: Color.fromARGB(255, 0, 0, 255),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10)),
-                child: Container(width: 300, height: 300),
-              )),
-        ],
-      ),
-    );
   }
 }
