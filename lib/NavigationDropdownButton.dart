@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'About5.dart';
 import 'about.dart';
 import 'about2.dart';
 import 'about3.dart';
@@ -18,6 +19,7 @@ class _NavigationButtonState extends State<NavigationButton> {
     "Princípios para o Sucesso de um Empreendimento": About3(),
     "Introdução": About(),
     "Quais são as dimensões (pilares) do MOSE?": About4(),
+    "Arquitetura do MOSE": About5(),
   };
   Widget build(BuildContext context) {
     return Container(
@@ -52,7 +54,8 @@ class _NavigationButtonState extends State<NavigationButton> {
                   'Introdução',
                   'Sonho e Sobrevivencia',
                   'Princípios para o Sucesso de um Empreendimento',
-                  'Quais são as dimensões (pilares) do MOSE?'
+                  'Quais são as dimensões (pilares) do MOSE?',
+                  'Arquitetura do MOSE'
                 ].map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
                     child: Text(
