@@ -1,23 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'NavigationDropdownButton.dart';
-import 'about2.dart';
 
-class About extends StatelessWidget {
-  String firstText =
-      "O MOSE foi desenvolvido com o objetivo de apoiar um empreendimento"
-      "a se desenvolver de forma saudável, sobrevivendo e crescendo com capacidade"
-      "para enfrentar o atual ambiente de negócios, cada vez mais competitivo.\n"
-      "Considera-se \"empreendimento\" a ideia aplicada a qualquer atividade hu"
-      "mana que tenha por objetivo produzir algum tipo de bem e/ou serviço.\n"
-      " Conseguimos identificar diversos problemas recorrentes nos empreendi"
-      "mentos, dentre eles gostaríamos de destacar:";
+class About3 extends StatelessWidget {
   final List<String> bulletPoints = [
-    "Falta de visão de mercado",
-    "Ausência de visibilidade",
-    "Defasagem tecnológica",
-    "Mão de obra",
-    "Interferência externas",
+    "1º Princípio: Gerar abundância",
+    "2º Princípio: O altruísmo",
+    "3º Princípio: causa e efeito",
+    "4º Princípio: Somos todos um",
+    "5º Princípio: Saia da zona de conforto",
     "Crescimento desestruturado",
     "Inércia",
     "Cultura organizacional ultrapassada"
@@ -38,28 +29,19 @@ class About extends StatelessWidget {
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             Padding(
               padding: EdgeInsets.only(top: 10),
               child: Container(
                 child: Text(
-                  "Introducao",
+                  "Princípios para o Sucesso de um Empreendimento",
                   textAlign: TextAlign.center,
                   style: Theme.of(context).textTheme.title,
                 ),
                 decoration: BoxDecoration(color: Colors.blue),
               ),
             ),
-            Flexible(
-                child: Padding(
-              padding: EdgeInsets.all(10),
-              child: Text(
-                firstText,
-                style: Theme.of(context).textTheme.body1,
-                softWrap: true,
-                textAlign: TextAlign.justify,
-              ),
-            )),
             Expanded(
               child: Scrollbar(
                 child: ListView.builder(
