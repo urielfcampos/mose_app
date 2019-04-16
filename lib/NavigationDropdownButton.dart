@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'About5.dart';
-import 'about.dart';
-import 'about2.dart';
-import 'about3.dart';
-import 'about4.dart';
+import './AboutPages/About5.dart';
+import './AboutPages/About6.dart';
+import './AboutPages/About7.dart';
+import './AboutPages/about.dart';
+import './AboutPages/about2.dart';
+import './AboutPages/about3.dart';
+import './AboutPages/about4.dart';
+import './AboutPages/about8.dart';
 
 class NavigationButton extends StatefulWidget {
   @override
@@ -20,6 +23,9 @@ class _NavigationButtonState extends State<NavigationButton> {
     "Introdução": About(),
     "Quais são as dimensões (pilares) do MOSE?": About4(),
     "Arquitetura do MOSE": About5(),
+    'Perfis das Unidades de Negócio': About6(),
+    "Níveis de Excelência": About7(),
+    "Elementos da Base de Competência": About8(),
   };
   Widget build(BuildContext context) {
     return Container(
@@ -55,7 +61,10 @@ class _NavigationButtonState extends State<NavigationButton> {
                   'Sonho e Sobrevivencia',
                   'Princípios para o Sucesso de um Empreendimento',
                   'Quais são as dimensões (pilares) do MOSE?',
-                  'Arquitetura do MOSE'
+                  'Arquitetura do MOSE',
+                  'Perfis das Unidades de Negócio',
+                  "Níveis de Excelência",
+                  "Elementos da Base de Competência"
                 ].map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
                     child: Text(

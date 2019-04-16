@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'NavigationDropdownButton.dart';
+import '../NavigationDropdownButton.dart';
 
 class About4 extends StatefulWidget {
   @override
@@ -37,7 +37,7 @@ class _About4State extends State<About4> with SingleTickerProviderStateMixin {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 25, 0, 0),
                 child: Text(
-                  "DIMENSOES DE COMPETENCIA",
+                  "DIMENSÕES DE COMPETÊNCIA",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: 28.0,

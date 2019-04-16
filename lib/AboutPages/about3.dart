@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'NavigationDropdownButton.dart';
+import '../NavigationDropdownButton.dart';
 
-class About5 extends StatelessWidget {
+class About3 extends StatelessWidget {
   final List<String> bulletPoints = [
     "1º Princípio: Gerar abundância",
     "2º Princípio: O altruísmo",

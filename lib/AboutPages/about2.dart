@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'NavigationDropdownButton.dart';
+import '../NavigationDropdownButton.dart';
 
 class About2 extends StatelessWidget {
   final firstText =
