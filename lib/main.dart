@@ -1,7 +1,8 @@
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
 
-import './AboutPages/about.dart';
+import './AboutPages/introducao.dart';
+import './CompetenciasPages/MainPage.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -100,7 +101,12 @@ class _MoseAppState extends State<MoseApp> with SingleTickerProviderStateMixin {
               ),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0)),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => mainCompetencias()));
+              },
             ),
           ),
           Padding(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../NavigationDropdownButton.dart';
+import 'package:mose_app/AboutPages/NavigationDropdownButton.dart';
 
 class About3 extends StatelessWidget {
   final List<String> bulletPoints = [
@@ -48,7 +47,11 @@ class About3 extends StatelessWidget {
                     itemCount: bulletPoints.length,
                     itemBuilder: (BuildContext cntx, int index) {
                       return ListTile(
-                          leading: Text("✦"), title: Text(bulletPoints[index]));
+                          leading: Text("✦"),
+                          title: Text(
+                            bulletPoints[index],
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ));
                     }),
               ),
             ),
