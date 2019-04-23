@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'ObjetivosTH.dart';
 import 'THmainPage.dart';
 
 class NavigationButton extends StatefulWidget {
@@ -11,7 +12,8 @@ class _NavigationButtonState extends State<NavigationButton> {
   @override
   String _dropDownValue = 'Selecione uma pagina';
   final pages = {
-    "DESCRIÇÃO e FINALIDADE": mainPageTH(),
+    "DESCRIÇÃO E FINALIDADE": mainPageTH(),
+    "Objetivos": THobjetivos()
   };
   Widget build(BuildContext context) {
     return Container(
@@ -42,9 +44,8 @@ class _NavigationButtonState extends State<NavigationButton> {
                     _dropDownValue = newValue;
                   });
                 },
-                items: <String>[
-                  'DESCRIÇÃO e FINALIDADE',
-                ].map<DropdownMenuItem<String>>((String value) {
+                items: <String>['DESCRIÇÃO E FINALIDADE', 'Objetivos']
+                    .map<DropdownMenuItem<String>>((String value) {
                   return DropdownMenuItem<String>(
                     child: Text(
                       value,

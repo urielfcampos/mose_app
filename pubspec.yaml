@@ -51,6 +51,7 @@ flutter:
     - images/arquiteturaMose_transp.png
     - images/MoseCompetencias_transp.png
     - images/ComponentesCompetenciaMose_transp.png
+    - THCompetenciasFluxo.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
 

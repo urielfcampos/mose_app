@@ -145,7 +145,17 @@ class mainPageTH extends StatelessWidget {
                   leading: Text("✦"),
                   title: Text(
                       "Inexistência de análises do retorno do investimento em relação a pessoal"
-    "e sua capacitação;"),
+                      "e sua capacitação;"),
+                ),
+                Container(
+                  height: 250,
+                  width: 60,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image:
+                            ExactAssetImage('images/THCompetenciasFluxo.png'),
+                        fit: BoxFit.fill),
+                  ),
                 ),
               ],
             )),
