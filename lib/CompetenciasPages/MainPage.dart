@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+
+import 'CMpages/CMmainPage.dart';
+import 'GQpages/GQmainPage.dart';
+import 'INpages/INmainPage.dart';
+import 'SMApages/SMAmainPage.dart';
 import 'THpages/THmainPage.dart';
 
 class mainCompetencias extends StatelessWidget {
@@ -63,7 +68,10 @@ class mainCompetencias extends StatelessWidget {
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(20)),
                 child: RaisedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => mainPageGQ()));
+                  },
                   color: Colors.blue,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
@@ -98,7 +106,12 @@ class mainCompetencias extends StatelessWidget {
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(20)),
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mainPageCM()));
+                    },
                     color: Colors.blue,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -127,7 +140,10 @@ class mainCompetencias extends StatelessWidget {
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(20)),
                 child: RaisedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => mainPageIN()));
+                  },
                   color: Colors.blue,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20)),
@@ -140,7 +156,7 @@ class mainCompetencias extends StatelessWidget {
                         size: 50,
                       ),
                       Text(
-                        "Inovacao",
+                        "Inovação",
                         textAlign: TextAlign.center,
                         style: TextStyle(color: Colors.white),
                       )
@@ -162,7 +178,12 @@ class mainCompetencias extends StatelessWidget {
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(20)),
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => mainPageSMA()));
+                    },
                     color: Colors.blue,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
