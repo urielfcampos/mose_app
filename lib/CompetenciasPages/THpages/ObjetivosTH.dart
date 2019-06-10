@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'THObjComp.dart';
+
 class THobjetivos extends StatefulWidget {
   @override
   _THobjetivosState createState() => _THobjetivosState();
@@ -252,7 +254,12 @@ class _THobjetivosState extends State<THobjetivos>
           ),
           child: ListTile(
             title: Text(key),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => THCompetencia(competencia: key)));
+            },
             trailing: Icon(Icons.forward),
           ),
         ));
