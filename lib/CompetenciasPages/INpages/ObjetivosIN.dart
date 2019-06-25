@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'INObjComp.dart';
+
 class INobjetivos extends StatefulWidget {
   @override
   _INobjetivosState createState() => _INobjetivosState();
@@ -255,7 +257,12 @@ class _INobjetivosState extends State<INobjetivos>
           ),
           child: ListTile(
             title: Text(key),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => INCompetencia(competencia: key)));
+            },
             trailing: Icon(Icons.forward),
           ),
         ));

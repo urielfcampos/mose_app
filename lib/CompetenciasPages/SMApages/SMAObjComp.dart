@@ -39,320 +39,315 @@ class ObjetivoList extends StatefulWidget {
    TODO: Look into extracting this into a file
   */
   Map<String, Map<String, dynamic>> mapCompentences = {
-    "TH.1 Pa": {
+    "SA.1 A ": {
       "resultadosEsperados":
-          "Espera-se para este objetivo que todos os papéis e responsabilidades dos"
-              "colaboradores da unidade de negócio do empreendimento estejam"
-              "definidos, tenham sido comunicados a eles e os mesmos tenham"
-              "aprovado as responsabilidades a eles atribuídas. É importante também"
-              "que estejam claras para todos os colaboradores as responsabilidades de"
-              "cada membro (ou de cada perfil de trabalho) para o desenvolvimento de"
-              "suas atividades e a comunicação que deve ser realizada entre eles.",
+          "Espera-se para este objetivo que a unidade de negócio conheça as"
+              "exigências formais para o seu funcionamento e esteja cumprindo estas"
+              "exigências. Estas exigências podem ser legais ou não, dependendo do tipo"
+              "de unidade de negócio. Para o caso de não cumprimento completo das"
+              "exigências, deve-se demonstrar que os gestores conhecem as"
+              "irregularidades e haja justificativas para seu não cumprimento.",
       "exemploDePraticas": [
-        "Definir os papéis e as responsabilidades para a execução das atividades"
-            "necessárias para a gestão e a produção de bens e serviços da unidade"
-            "de negócios;",
-        "Comunicar os papéis e responsabilidades para cada colaborador da"
-            "unidade de negócio e obter aprovação por parte dos mesmos;",
-        "Realizar treinamento sobre as responsabilidades que serão assumidas"
-            "para os colaboradores recém-admitidos;",
-        "Definir e comunicar toda comunicação possível e necessária entre os"
-            "colaboradores (ou perfis)e/ou equipes;",
-        "Garantir que os colaboradores sejam comunicados e estejam cientes"
-            "das mudanças que podem ocorrer relacionadas aos papéis,"
-            "responsabilidades e comunicação;"
+        "Manter regularizados e atualizados: contratos sociais, alvarás de"
+            "funcionamento, CNPJs, contas bancárias, documentos contábeis,"
+            "certidões fiscais, entre outros. O que deve ser mantido"
+            "regularizado irá depender do tipo de negócio do empreendimento"
+            "ou da unidade de negócios;",
+        "Desenvolver e manter contratos com incubadoras, aceleradoras e/"
+            "ou investidores quando se tratar de unidade de negócios iniciais e"
+            "em desenvolvimento;",
+        "Registrar e obter o comprometimento entre os colaboradores da"
+            "unidade de negócio quando se tratar de unidade de negócio"
+            "informal ou em fase inicial de desenvolvimento (ex: Startups);",
+        "Auditar as exigências legais periodicamente com o intuito de"
+            "garantir o cumprimento delas quanto a sua existência e validade;",
+        "Conhecer as irregularidades e justificá-las quando não for possível"
+            "saná-las."
       ],
-      "IndicadoresObrigatorios": ["%PessoasPapel", "CustoPapel"],
-      "OutrosIndicadores": ["HorasPapel"]
+      "IndicadoresObrigatorios": ["QtdeProblemasExigências"],
+      "OutrosIndicadores": ["QtdeProblemasExigênciasResolvidos"]
     },
-    "TH.2 Ne": {
-      "resultadosEsperados": "Espera-se para este objetivo que as necessidades de capacitação dos"
-          "colaboradores em relação às atividades que desempenham sejam"
-          "identificadas e tratadas no decorrer do tempo. Para este objetivo é"
-          "necessário demonstrar que as necessidades são conhecidas, contudo, não"
-          "se exige que todas elas sejam resolvidas. Resolvê-las pode depender"
-          "fortemente de investimentos financeiros e tempo, ficando assim a"
-          "critério de seus gestores a priorização deste aspecto na unidade de"
-          "negócio. Contudo, exige-se para este objetivo, no caso da não resolução,"
-          "que pelo menos uma análise tenha sido feita e justificativas tenham sido"
-          "formalizadas. As capacitações podem ser de diversos tipos como: cursos,"
-          "auto-estudo, mentoring, coaching, seminários,workshops, estágio,"
-          "simpósios, entre outros.",
+    "SA.2 Re": {
+      "resultadosEsperados":
+          "Espera-se para este objetivo que sejam identificados alguns dos resíduos"
+              "produzidos pela unidade de negócio que causem impacto negativo"
+              "ambiental e/ou social. Estes resíduos devem ser manejados de acordo"
+              "com os procedimentos legais e ações para sua redução devem ser"
+              "conhecidas e praticadas pelos colaboradores.",
       "exemploDePraticas": [
-        "Mapear as habilidades necessárias para desempenhar um determinado"
-            "papel na unidade de negócio;",
-        "Realizar reuniões de feedback;",
-        "Avaliar os colaboradores em relação às habilidades necessárias para"
-            "desenvolver suas atividades;",
-        "Identificar necessidades de capacitação dos colaboradores da unidade"
-            "de negócio em relação às habilidades necessárias;",
-        "Planejar e executar capacitações (formais ou informais) com o intuito"
-            "de auxiliar a tratar as necessidades de capacitação dos colaboradores;",
-        "Prover treinamentos;",
-        "Comprar livros, participar de simpósios, workshops, seminários;",
-        "Criar grupo de estudos;",
-        "Desenvolver seminários para formação e disseminação do"
-            "conhecimento entre os colaboradores;",
-        "Formalizar justificativas para a não resolução de deficiências de"
-            "capacitação e comunicar os envolvidos."
+        "Identificação de resíduos que causam impacto ambiental e/ou social"
+            "pela unidade de negócios;",
+        "Desenvolver ou participar de programas de coleta seletiva;",
+        "Destinar adequadamente os resíduos eletrônicos;",
+        "Desenvolver critérios de escolha para aquisição de equipamentos;",
+        "Desenvolver programas de conscientização para a redução do"
+            "desperdício e consumo de energia, água, gás, etc;",
+        "Desenvolver ou participar de programas de reciclagem de papel.",
       ],
-      "IndicadoresObrigatorios": ["HorasCapacitação", "CustoCapacitação"],
+      "IndicadoresObrigatorios": ["%ResíduosTiposResíduosTratados"],
       "OutrosIndicadores": [
-        "%Horas_CapacitaçãoXProdução",
-        "%Custo_CapacitaçãoXProdução",
-        "HorasCapacitação (XEquipe, XPapel)",
-        "Custo_Capacitação (XEquipe, XPapel)"
+        "%ReduçãoConsumoEnergia",
+        "QtdeKilosPapelReciclagem",
+        "QtdeDoaçõesEquipamentos"
       ]
     },
-    "TH.3 Os": {
-      "resultadosEsperados": "Espera-se para este objetivo que os colaboradores estejam cientes e sejam"
-          "comunicados de suas metas que devem atingir e se possível dos objetivos"
-          "de negócio. As metas devem estar definidas por colaborador (e/ou equipe)"
-          "e um mecanismo para acompanhá-las deve ser estabelecido. Caso os"
-          "colaboradores e/ou equipes não estejam cumprindo as metas préestabelecidas,"
-          "ações corretivas devem ser realizadas ou as metas devem ser"
-          "revistas. Pode haver uma forte sinergia entre este objetivo e GQ.2, quando"
-          "as metas dos colaboradores estiverem relacionadas à produção de bens e"
-          "serviços.",
+    "SA.3 Pr": {
+      "resultadosEsperados":
+          "Espera-se para este objetivo que colaboradores da unidade de negócio"
+              "participem ativamente de associações (formais ou informais) que"
+              "possam vir a ampliar as oportunidades de negócio do"
+              "empreendimento, bem como prover a troca de conhecimentos e"
+              "experiências. O cooperativismo deve ser considerado por todas as"
+              "unidades de negócio, especialmente as do tipo Pequena, por terem"
+              "impacto significativo em aspectos relacionados a sua própria"
+              "sobrevivência. O associativismo e cooperativismo é um catalizador da"
+              "melhoria do ambiente onde a unidade de negócio está inserida,"
+              "tendo-se como verdade que um ambiente mais maduro trará"
+              "benefícios a todas as unidades de negócio inseridas naquele"
+              "ecossistema.",
       "exemploDePraticas": [
-        "Comunicar os objetivos do negócio aos colaboradores que são afetados"
-            "por eles;",
-        "Definir, estabelecer e manter as metas a serem cumpridas pelos"
-            "colaboradores e/ou equipes;",
-        "Analisar as metas frente aos resultados atingidos;",
-        "Analisar as metas de forma objetiva e tomar ações para corrigir desvios;",
-        "Monitorar as ações corretivas até sua finalização;",
-        "Ajustar os valores das metas quando se observar não ser possível atingilas,"
-            "bem como quando durante um período prolongado estão sendo atingidas.",
+        "Participar ativamente de associações (formais e informais) tendo claros"
+            "os objetivos pelos quais os colaboradores da unidade organizacional"
+            "estão participando, observando os resultados atingidos com esta"
+            "participação;",
+        "Desenvolver ações que promovem o cooperativismo;",
+        "Coordenar e participar de ações de disseminação do conhecimento"
+            "(tanto técnico quanto de gestão), como por exemplo: workshops,"
+            "palestras, seminários, entre outros;",
+        "Cooperar com unidades de negócio similares;",
+        "Promover eventos em conjunto com outras unidades de negócio."
       ],
-      "IndicadoresObrigatorios": ["%MetasAtingidas"],
+      "IndicadoresObrigatorios": ["HorasAssociativismo"],
+      "OutrosIndicadores": ["HorasAssociativismoXProdução"]
+    },
+    "SA.4 A ": {
+      "resultadosEsperados":
+          "A responsabilidade social e ações sócio-culturais são tratadas dentro"
+              "da unidade de negócio. Entende-se como responsabilidade social"
+              "quando a unidade de negócio, voluntariamente, contribui para uma"
+              "sociedade mais justa. As ações socioculturais dizem respeito a"
+              "fomentar os aspectos sociais e culturais de uma comunidade ou"
+              "sociedade. Aspectos esses que organizam a vida comunitária e dão e"
+              "ela significação própria."
+              "A responsabilidade social e ações socioculturais devem ser tratadas"
+              "sob dois aspectos: interno e externo. O interno diz respeito a como se"
+              "pode melhorar a qualidade de vida dos colaboradores e o externo, em"
+              "como os colaboradores podem apoiar a melhoria da qualidade de vida"
+              "de outras pessoas que são externas à unidade de negócio.",
+      "exemploDePraticas": [
+        "Coordenar e/ou participar de eventos e grupos esportivos, musicais e"
+            "sócio-culturais;",
+        "Apoiar programas de inserção do jovem no mercado de trabalho;",
+        "Prover vagas de trabalho para iniciantes (estagiários);",
+        "Apoiar os institutos de ensino na formação de mão de obra qualificada;",
+        "Coordenar e participar de campanhas humanitárias como: doação de"
+            "sangue, campanha do agasalho, arrecadação de alimento, coleta de"
+            "donativos, campanhas natalinas, entre outras;",
+        "Apoiar treinamentos que desenvolvem habilidades nos colaboradores"
+            "que vão além do utilizado na gestão e produção dos bens e serviços;",
+        "Fornecer bolsas incentivando o esporte;",
+        "Desenvolver projetos em conjunto com escolas e universidades;",
+        "Fornecer bolsas para pesquisas científicas;",
+        "Fornecer bolsas para estágio;"
+      ],
+      "IndicadoresObrigatorios": ["QtdeAçõesSocioCulturais"],
       "OutrosIndicadores": [
-        "%MetasAtingidasXColaborador",
-        "%MetasAtingidasXEquipe"
+        "QtdeEstagiários",
+        "QtdeAçõesSócioCulturaisPlanXExec"
       ]
     },
-    "TH.4 Aç": {
-      "resultadosEsperados":
-          "Espera-se para este objetivo que programas (ou ações) para a promoção"
-              "da qualidade de vida e bem-estar dos colaboradores sejam"
-              "desenvolvidos. Estes programas (ou ações) podem ser determinados"
-              "por eventos específicos, campanhas motivacionais, bem como"
-              "atividades e atitudes implementadas no dia a dia da unidade de"
-              "negócio. Não há necessidade de grandes investimentos financeiros para"
-              "atingir este objetivo, contudo, é necessário demonstrar através das"
-              "possibilidades financeiras (e de tempo) que o bem-estar dos"
-              "colaboradores é considerado com zelo.",
-      "exemploDePraticas": [
-        "Desenvolver campanhas de endomarketing;",
-        "Implementar melhorias relacionadas à ergonomia;",
-        "Realizar eventos de comemoração por metas atingidas,",
-        "Realizar eventos em datas festivas, aniversários, entre outros;",
-        "Desenvolver programas (ou ações) para o bem-estar físico e psíquico"
-            "como: ginastica laboral, massagens, ambientes de relaxamento, entre"
-            "outros;",
-        "Organizar e incentivar reuniões informais entre os colaboradores (ex:"
-            "happy hour, cinema, refeições comunitárias, entre outras);",
-        "Desenvolver programas (ou acões) para premiação de colaboradores"
-            "baseando-se no desempenho alcançado;"
-      ],
-      "IndicadoresObrigatorios": ["QtdeAçõesValorização"],
-      "OutrosIndicadores": ["% AçõesValorizaçãoPlanXExec"]
-    },
-    "TH.5 Pl": {
-      "resultadosEsperados": "Espera-se para este objetivo que a unidade de negócio tenha"
-          "desenvolvido um roteiro para que seus colaboradores possam se inserir"
-          "em um determinado ponto da carreira e ter clarezaa respeito de onde"
-          "eles estarão caso desenvolvam seus talentos, habilidades e melhorem seu"
-          "desempenho. Avaliações devem ser realizadas com o intuito de promover"
-          "a progressão dos colaboradores no plano de cargos, carreira e salário. O"
-          "mais importante para este objetivo é poder garantir que os colaboradores"
-          "possam conhecer o futuro profissional que os espera caso estejam bem"
-          "engajados nas atividades sob sua responsabilidade dentro da unidade de"
+    "SA.5 As": {
+      "resultadosEsperados": "Espera-se para este objetivo que sejam disseminadas e de conhecimento"
+          "de todos os colaboradores as missões que determinam a razão da"
+          "existência da unidade de negócio. Com o intuito de dar maiores"
+          "esclarecimentos em relação à missão, recomenda-se também o"
+          "estabelecimento de visão, princípio e valores. Espera-se também para"
+          "este objetivo que sejam estabelecidos e disseminados aspectos"
+          "relacionados ao tipo de cultura organizacional que a unidade de negócio"
+          "adota, com o intuito de engajar todos os colaboradores em uma mesma"
+          "cultura. Esta cultura pode estabelecer temas como: regras de conduta,"
+          "regras de comunicação, regras de comportamento, regras de uso de"
+          "recursos, regras de horários, entre outras. Deve-se garantir que a missão"
+          "e a cultura sejam compreendidos pelos colaboradores da unidade de"
           "negócio.",
       "exemploDePraticas": [
-        "Desenvolver, executar e atualizar planos de cargos, carreira e salário"
-            "com base nas habilidades desejadas e/ou desempenho dos"
-            "colaboradores;",
-        "Estabelecer mecanismos para que seja possível um colaborador"
-            "enxergar seu “futuro” na unidade de negócio;",
-        "Medir a quantidade de demissões espontâneas relacionadas à falta de"
-            "perspectiva dos colaboradores;",
-        "Avaliar os colaboradores conforme critérios pré-estabelecidos;",
-        "Promover a progressão dos colaboradores com base nas avaliações"
-            "realizadas."
+        "Definir as missões, visões, princípios e valores que nortearão a"
+            "existência da unidade de negócios;",
+        "Desenvolver e manter o organograma da unidade de negócio;",
+        "Desenvolver, manter e disseminar as regras (conduta, comunicação,"
+            "comportamento, uso de recursos, horários, entre outras) que devem"
+            "ser seguidas pelos colaboradores;",
+        "Fomentar e disseminar a cultura organizacional baseada nas regras"
+            "estabelecidas;",
+        "Observar as regras da cultura organizacional que não estão sendo"
+            "seguidas, analisá-las, promover a conscientização dos colaboradores"
+            "quanto a elas e/ou modificando-as, se necessário."
       ],
-      "IndicadoresObrigatorios": ["%ColaboradoresEvoluíram", "%Turnover"],
-      "OutrosIndicadores": ["%TurnoverXPapel"]
+      "IndicadoresObrigatorios": ["QtdeAçõesDisseminaçãoCultura"],
+      "OutrosIndicadores": ["QtdeAçõesDisseminaçãoCulturaPlanXExec"]
     },
-    "TH.6 Pr": {
+    "SA.6 A ": {
       "resultadosEsperados":
-          """Espera-se para este objetivo que programas (e/ou ações) para
-          capacitação profissional sejam realizados visando o aumento do
-         desempenho dos colaboradores e a resolver deficiências em sua formação
-          profissional. É necessário conhecer previamente as reais necessidades da
-          unidade de negócio, ou seja, tudo que for planejado e executado deve
-          estar atrelado a suprir uma necessidade específica. Estes programas (ou
-          ações) devem visar capacitação técnica, gerencial e comportamental.
-          Diferente de TH.3, exige-se para este objetivo que existam programas
-          ativos para capacitação e que as necessidades estejam sendo sanadas.
-          Uma necessidade pode estar inclusive relacionada ao não atingimento de
-          metas. Caso o programa (ou ações) não esteja surtindo efeito em relação
-          às necessidades observadas, devem-se realizar análises e haver mudança
-         nas estratégias adotadas.""",
+          """Espera-se para este objetivo que seja analisada e melhoradas
+              sistematicamente a eficiência energética e hídrica do desenvolvimento
+              das atividades de gestão e produção de bens e serviços na unidade de
+              negócios. Espera-se também que o índice de eficiência energética seja
+              um dos critérios analisados para a aquisição e troca de equipamentos.""",
       "exemploDePraticas": [
         """
-        Identificar as necessidades técnicas, de gestão e comportamentais dos
-        colaboradores e equipes (fontes podem ser: reunião de feedback,
-        avaliação 360 graus, problemas com metas não atingidas, problemas
-        identificados em falhas dos bens e serviços, entre outros);
+        Monitorar a vida útil dos equipamentos;
         """,
-        "Definir programas (ou ações) para suprir as necessidades de"
-            "capacitação dos colaboradores;",
-        "Executar, monitorar e controlar as ações definidas nos programas;",
-        "Manter histórico das capacitações realizadas;",
-        "Manter materiais utilizados nas capacitações, por exemplo:"
-            "apresentação, livros, ferramentas, entre outros;",
-        "Desenvolver ações para incentivar os colaboradores no cumprimento"
-            "das metas;",
-        "Realizar ajustes no programa de capacitação, especialmente para o caso"
-            "de seus objetivos não estarem sendo atingidos."
+        "Analisar as opções de compra de novos equipamentos considerando a"
+            "eficiência energética e hídrica como um dos fatores que influenciam a"
+            "compra;",
+        "Manter registros de gastos com energia e água;",
+        "Apoiar a implantação de fontes renováveis de energia e água;",
+        "Ter programas de substituição de equipamentos, iluminação e"
+            "refrigeração por equipamentos mais eficientes;",
+        "Substituir equipamentos que possuem baixa eficiência energética;",
+        "Implantar programa de uso de energia renovável;",
+        "Implantar programas para a redução do consumo de água;",
+        'Implantar programa de carona solidária.'
+      ],
+      "IndicadoresObrigatorios": ["\$CustoEnergia", "%ReduçãoConsumoEnergia"],
+      "OutrosIndicadores": ["Não há"]
+    },
+    "SA.7 Os": {
+      "resultadosEsperados":
+          """Espera-se para este objetivo que a unidade de negócio tenha
+              conhecimento dos impactos negativos que sua atividade gera ao meio
+              ambiente e à sociedade, tanto direta quanto indiretamente, e que
+              desenvolva ações para contigenciamento e mitigação destes impactos.
+              Espera-se também observar no tempo que os impactos negativos ao meio
+              ambiente e à sociedade estejam sendo reduzidos.""",
+      "exemploDePraticas": [
+        """
+        Identificar os impactos ambientais relacionados à atividade da unidade
+          de negócios, estabelecendo prioridade e planejar ações de
+          contingenciamento e mitigação dos mesmos;
+        """,
+        "Monitorar e controlar as ações de mitigação dos impactos ambientais"
+            "identificados;",
+        "Apoiar programas de reflorestamento, plantio de árvores na cidade,"
+            "preservação de mananciais, recuperação de áreas degradadas, entre"
+            "outros;",
+        "Considerar como critério de compra certificação e possibilidade de"
+            "renovação dos insumos (ex: selo FSC);",
+        "Realizar campanhas de redução de consumo energético e de produtos"
+            "não renováveis",
+        "Realizar campanhas para substituição de meios de transportes"
+            "poluentes ou à base de combustíveis fósseis por outros meios de"
+            "transporte menos poluentes;",
+        "Realizar campanhas de carona solidária;",
+        "Desenvolver programas de empreendimento “verde” e/ou carbono"
+            "neutro."
       ],
       "IndicadoresObrigatorios": [
-        "HorasCapacitação",
-        "CustoCapacitação",
-        "%HorasCapacitaçãoXProdução",
-        "%CustoCapacitaçãoXProdução"
+        "QtdeAçõesImpactoAmbiental",
       ],
       "OutrosIndicadores": [
-        "HorasCapacitação (XEquipe, XPapel)",
-        "CustoCapacitação (XEquipe, XPapel)"
+        "QtdeAçõesImpactoAmbientalPlanXExec",
+        "HorasAçõesImpactoAmbiental",
+        "\$CustoAçõesImpactoAmbiental"
       ]
     },
-    "TH.7 Pa": {
-      "resultadosEsperados":
-          """Espera-se para este objetivo que tenha sido desenvolvida uma forma de
-             realizar a distribuição da abundância gerada pela unidade de negócio
-             para seus colaboradores. Entenda-se como abundância o conjunto de
-             metas que foram atingidas e que superaram as expectativas de
-             crescimento. A distribuição dos resultados torna os colaboradores do
-             empreendimento mais dispostos a executarem cada vez melhor suas
-             atividades. O cumprimento deste objetivo motiva os colaboradores a se
-             desenvolvem, trazendo o crescimento também para o negócio.""",
+    "SA.8 Ac": {
+      "resultadosEsperados": "Espera-se para este objetivo que sejam identificados os fornecedores"
+          "relevantes, ou seja, aqueles que têm impacto significativo na entrega dos"
+          "bens e serviços produzidos pela unidade de negócio. Para estes"
+          "fornecedores, devem-se estabelecer acordos (de preferencia formais), com"
+          "entregas planejadas e metas a serem cumpridas. Análises periódicas"
+          "devem ser realizadas nestes acordos com o intuito de garantir o"
+          "cumprimento das metas pré-estabelecidas. Caso haja descumprimento"
+          "significativo (impactando os negócios), deve-se estudar e priorizar a"
+          "substituição do fornecedor. Com o intuito de facilitar futuras"
+          "contratações, deve-se manter um histórico dos fornecedores e seu"
+          "desempenho nos acordos. No caso de uma nova contratação, na qual não"
+          "exista um histórico, deve-se realizar pelo menos uma pesquisa de mercado"
+          "quanto à idoneidade e seriedade do fornecedor.",
       "exemploDePraticas": [
         """
-        Planejar a distribuição de resultados alcançados pela unidade de
-        negócio com base em metas pré-definidas
+        Efetuar acordos formais com fornecedores relevantes, estabelecendo os
+          níveis de acordo de serviço e de entrega dos bens e/ou serviços;
         """,
-        "Comunicar as metas que devem ser atingidas para os colaboradores"
-            "e/ou equipes para que a distribuição dos resultados seja realizada;",
-        "Medir o desempenho dos colaboradores e/ou equipe ao longo do"
-            "tempo;",
-        "Manter histórico das capacitações realizadas;",
-        "Manter materiais utilizados nas capacitações, por exemplo:"
-            "apresentação, livros, ferramentas, entre outros;",
-        "Realizar a distribuição dos resultados;",
+        "Estabelecer e manter histórico das contratações realizadas pela unidade"
+            "de negócio;",
+        "Analisar a capacidade, desempenho, idoneidade e seriedade do"
+            "fornecedor antes de contratá-lo;",
+        "Definir regras para seleção e descarte de um fornecedor;",
+        "Manter histórico das contratações relevantes efetuadas"
       ],
-      "IndicadoresObrigatorios": [
-        "%\$Distribuído",
-        "%ColaboradoresParticipação",
-      ],
-      "OutrosIndicadores": ["\$DistribuídoXPapel", "\$DistribuídoXEquipe"]
+      "IndicadoresObrigatorios": ["QtdeAcordosFornecedoresVálidos"],
+      "OutrosIndicadores": ["não há."]
     },
-    "TH.8 An": {
-      "resultadosEsperados": "Para este objetivo, devem-se analisar os programas e ações estabelecidos"
-          "em TH.6 em relação a sua eficiência e eficácia. Deve-se, para este"
-          "objetivo, conhecer quais capacitações estão sendo mais eficientes e"
-          "surtindo efeitos mais positivos em relação às necessidades que devem"
-          "suprir. O retorno do investimento em qualificação deve ser observado (e"
-          "se possível medido), considerando fatores como impactos na diminuição"
-          "dos custos, aumento de negócios, melhoria das metas, entre outros."
-          "Após as análises, deve-se decidir suspender, modificar e/ou ampliar os"
-          "programas e ações estabelecidos, considerando o ROI (Retorno do"
-          "Investimento) identificado. É importante para este objetivo que a mesma"
-          "análise seja realizada em relação às ações socioculturais desenvolvidas"
-          "em TH.4, contudo, não é obrigatório.",
-      "exemploDePraticas": [
-        """
-        Analisar a eficácia e eficiência dos programas (ou ações) estabelecidos
-        e executados na unidade de negócio;
-        """,
-        "Realizar mudanças nos programas de qualificação, considerando a"
-            "análise de sua eficácia e eficiência;",
-        "Redefinir/readaptar/ajustar programas (ou ações) de capacitação;",
-        "Desenvolver e manter histórico dos resultados obtidos com a execução"
-            "dos programas e ações em relação a suprir as necessidades"
-            "identificadas (incluindo parâmetros como: custo, tempo, pessoas"
-            "envolvidas, avaliação dos colaboradores, resultado obtido após"
-            "capacitação, entre outros);",
-      ],
-      "IndicadoresObrigatorios": [
-        "HorasCapacitação",
-        "CustoCapacitação",
-        "%Horas_CapacitaçãoXProdução",
-        "%Custo_CapacitaçãoXProdução"
-      ],
-      "OutrosIndicadores": [
-        "HorasCapacitação (XEquipe, XPapel)",
-        "CustoCapacitação (XEquipe, XPapel)"
-      ]
-    },
-    "TH.9 A ": {
+    "SA.9 Le": {
       "resultadosEsperados":
-          "Espera-se para este objetivo que a unidade de negócio realize a inclusão"
-              "social de pessoas com deficiência física ou mental, respeitando no"
-              "mínimo a legislação vigente.",
+          "Espera-se para este objetivo que a unidade de negócio cumpra a legislação"
+              "ambiental e trabalhista exigida em relação as suas atividades, como por"
+              "exemplo: normas de segurança no trabalho, normas para certificação de"
+              "produtos, normas de vigilância sanitária, entre outras. Uma vez que"
+              "existem diversas peculiaridades conforme o setor de atuação, os"
+              "resultados esperados para este objetivo dependerão das exigências legais"
+              "que se aplicarem às atividades da unidade de negócio.",
       "exemploDePraticas": [
-        "Estudar leis para a acessibilidade;",
-        "Estudar leis para inclusão social;",
-        "Desenvolver ações na unidade de negócio para prover acesso às"
-            "pessoas com deficiências físicas;",
-        "Desenvolver ações na unidade de negócio para prover a inclusão de"
-            "pessoas com deficiência física e/ou mental no mercado de trabalho;",
-        "Contribuir com algum programa que apoia a inclusão de pessoas com"
-            "deficiência física e mental no mercado de trabalho."
+        "Implantar e se certificar em normas como:",
+        "(a) ISO14.000 - sistema de gestão ambiental que é exigido de indústrias,"
+            "construtoras, etc;",
+        "(b) LEED (Leadership in Energy and Environmental Design) -"
+            "Certificação ambiental de edificações;",
+        "(c) FSC (Forest Stewardship Council) - Certificação para manejo"
+            "sustentável de produtos de origem florestal;",
+        "(d) Normas ABNT para instalações, tratamento e manejo de resíduos,"
+            "tratamento de Efluentes, etc. (NBR 15594-3, 10.004);",
+        "(e) Normas ABNT referentes à segurança do trabalho, ergonomia, poluição"
+            "sonora, trabalhos insalubres, e outras que forem aplicáveis decorrentes dos"
+            "tratados da Organização Internacional do Trabalho (NR 1, NR 12, NR 17,"
+            "NR 18, etc.);",
+        "(f) ABNT NBR 16001 e ISO26.000 – Que trata de um sistema de gestão"
+            "de responsabilidade social."
       ],
-      "IndicadoresObrigatorios": ["% ColaboradoresDeficiência"],
+      "IndicadoresObrigatorios": ["não há."],
       "OutrosIndicadores": ["não há"]
     },
-    "TH.E0 N": {
-      "resultadosEsperados": "Nenhum dos objetivos de competência de Talento Humano"
-          "(respeitando-se o seu perfil) é satisfeito pelas práticas executadas na"
-          "unidade de negócio.",
-      "exemploDePraticas": ["Vide as práticas citadas em TH.1 a TH9"],
-      "IndicadoresObrigatorios": ["Vide os indicadores citados em TH.1 a TH.9"],
-      "OutrosIndicadores": ["Vide os indicadores citados em TH.1 a TH.9"]
+    "SA.E0 N": {
+      "resultadosEsperados":
+          "Nenhum dos objetivos de competência de Inovação (respeitando-se o"
+              "seu perfil) é satisfeito pelas práticas executadas na unidade de"
+              "negócio.",
+      "exemploDePraticas": ["Vide as práticas citadas em SA.1 a SA.9"],
+      "IndicadoresObrigatorios": ["Vide as práticas citadas em SA.1 a SA.9"],
+      "OutrosIndicadores": ["Vide as práticas citadas em SA.1 a SA.9"]
     },
-    "TH.E1 A": {
+    "SA.E1 A": {
       "resultadosEsperados":
           "Espera-se para este objetivo que pelo menos um dos objetivos de"
-              "competência para a dimensão de Talento Humano (respeitando-se o"
-              "seu perfil) esteja sendo satisfeito pelas práticas executadas da"
-              "unidade de negócio.",
-      "exemploDePraticas": ["Vide as práticas citadas em TH.1 a TH9"],
-      "IndicadoresObrigatorios": ["Vide os indicadores citados em TH.1 a TH.9"],
-      "OutrosIndicadores": ["Vide os indicadores citados em TH.1 a TH.9"]
+              "competência para a dimensão de Inovação (respeitando-se o seu"
+              "perfil) esteja sendo satisfeito pelas práticas executadas da unidade de"
+              "negócio.",
+      "exemploDePraticas": ["Vide as práticas citadas em SA.1 a SA.9"],
+      "IndicadoresObrigatorios": ["Vide as práticas citadas em SA.1 a SA.9"],
+      "OutrosIndicadores": ["Vide as práticas citadas em SA.1 a SA.9"]
     },
-    "TH.E2 T": {
+    "SA.E2 T": {
       "resultadosEsperados":
           "Espera-se para este objetivo que todos os objetivos da competência"
-              "para a dimensão de Talento Humano (respeitando-se o seu tipo)"
-              "estejam sendo satisfeitos pelas práticas executadas da unidade de"
-              "negócio.",
-      "exemploDePraticas": ["Vide as práticas citadas em TH.1 a TH9"],
-      "IndicadoresObrigatorios": ["Vide os indicadores citados em TH.1 a TH.9"],
-      "OutrosIndicadores": ["Vide os indicadores citados em TH.1 a TH.9"]
+              "para a dimensão de Inovação (respeitando-se o seu tipo) estejam"
+              "sendo satisfeitos pelas práticas executadas da unidade de negócio.",
+      "exemploDePraticas": ["Vide as práticas citadas em SA.1 a SA.9"],
+      "IndicadoresObrigatorios": ["Vide as práticas citadas em SA.1 a SA.9"],
+      "OutrosIndicadores": ["Vide as práticas citadas em SA.1 a SA.9"]
     },
-    "TH.E3a ": {
+    "SA.E3a ": {
       "resultadosEsperados":
           "Espera-se para este objetivo que itens relevantes (insumos, produtos,"
               "ferramentas, documentos, entre outros) utilizados e gerados pela"
-              "execução das práticas de Talento Humano estejam controlados. Controlálos"
-              "envolve saber: onde estarão armazenados, quem pode ter acesso a"
-              "eles, quem aprova e como será o controle de suas mudanças.",
+              "execução das práticas de Inovação estejam controlados. Controlá-los"
+              "envolve saber: onde estarão armazenados, quem pode ter acesso a eles,"
+              "quem aprova e como será o controle de suas mudanças.",
       "exemploDePraticas": [
         "Identificar os itens que são relevantes (insumos, produtos, dados,"
             "ferramentas, documentos, entre outros) para o desenvolvimento das"
-            "práticas de Talento Humano;",
+            "práticas de Inovação;",
         "Estabelecer mecanismos para controlar os itens relevantes (ex:"
             "ferramentas, ambientes físicos, etiquetagem, controle de acesso,"
             "versionamentos, controle de mudanças, quem é o “dono” do item,"
@@ -361,184 +356,184 @@ class ObjetivoList extends StatefulWidget {
       "IndicadoresObrigatorios": ["Não há"],
       "OutrosIndicadores": ["Não há"]
     },
-    "TH.E3b ": {
+    "SA.E3b ": {
       "resultadosEsperados":
-          "Espera-se para este objetivo que as práticas de Talento Humano (TH.1 a"
-              "TH.9, conforme o perfil da unidade de negócio) sejam auditadas"
-              "observando se estão sendo executadas e se cumprem os padrões (se"
-              "houver). Deve-se também considerar para este objetivo auditar os itens"
-              "relevantes definidos em TH.E3a. As auditorias envolvem observar"
-              "aspectos importantes das práticas de forma mais objetiva possível e ter"
-              "também insights a respeito de possíveis melhorias em sua execução.",
+          "Espera-se para este objetivo que as práticas de Inovação (SA.1 a SA.9,"
+              "conforme o perfil da unidade de negócio) sejam auditadas observando se"
+              "estão sendo executadas e se cumprem os padrões (se houver). Deve-se"
+              "também considerar para este objetivo auditar os itens relevantes"
+              "definidos em SA.E3a. As auditorias envolvem observar aspectos"
+              "importantes das práticas de forma mais objetiva possível e ter também"
+              "insights a respeito de possíveis melhorias em sua execução.",
       "exemploDePraticas": [
         "Selecionar os padrões que devem ser seguidos;",
-        "Selecionar práticas de Talento Humano que devem ser executadas;",
-        "Criar critérios para a auditoria da execução das práticas de Talento"
-            "Humano como: periodicidade, necessidade, padrões a serem seguidos,"
-            "etc;",
-        "Criar checklist de auditoria para as práticas de Talento Humano;",
+        "Selecionar práticas de Inovação que devem ser executadas;",
+        "Criar critérios para a auditoria da execução das práticas de Inovação"
+            "como: periodicidade, necessidade, padrões a serem seguidos, etc;",
+        "Criar checklist de auditoria para as práticas de Inovação;",
         "Criar checklist de auditoria para verificar se os itens relevantes das"
-            "práticas de Talento Humano seguem os padrões definidos;",
+            "práticas de Inovação seguem os padrões definidos;",
         "Executar auditorias identificando as não conformidades;",
         "Corrigir as não conformidades identificadas, se pertinente e possível;",
         "Planejar, monitorar e controlar as atividades específicas de auditoria;"
       ],
       "IndicadoresObrigatorios": [
-        "QtdeNãoConformidadesTH",
-        "QtdeNãoConformidadesResolvidasTH"
+        "QtdeNãoConformidadesSA",
+        "QtdeNãoConformidadesResolvidasSA",
+        "QtdeProblemasExigenciasFuncionamento"
       ],
       "OutrosIndicadores": ["Não há"]
     },
-    "TH.E4a ": {
+    "SA.E4a ": {
       "resultadosEsperados":
           "Espera-se para este objetivo que a execução das práticas que satisfazem a"
-              "competência de Talento Humano seja planejada. Este planejamento"
-              "envolve a definição de: colaboradores envolvidos, recursos necessários,"
-              "custo, tempo, esforço, riscos, comunicação e necessidades de"
-              "treinamento. Atividades relacionadas às auditorias (TH.E3b) e controle"
-              "dos itens relevantes (TH.E3a) devem também ser planejados. Deve-se"
-              "definir também como será realizado o monitoramento e controle da"
-              "execução das práticas de Talento Humano.",
+              "competência de Inovação seja planejada. Este planejamento envolve a"
+              "definição de: colaboradores envolvidos, recursos necessários, custo,"
+              "tempo, esforço, riscos, comunicação e necessidades de treinamento."
+              "Atividades relacionadas às auditorias (SA.E3b) e controle dos itens"
+              "relevantes (SA.E3a) devem também ser planejados. Deve-se definir"
+              "também como será realizado o monitoramento e controle da execução"
+              "das práticas de Inovação.",
       "exemploDePraticas": [
-        "Planejar esforço, tempo (cronograma) e custo, estimando as atividades e"
-            "produtos que serão gerados pelas práticas de Talento Humano;",
+        "Planejar esforço, tempo (cronograma) e custo, estimando as atividades"
+            "e produtos que serão gerados pelas práticas de Inovação;",
         "Planejar os recursos humanos, suas responsabilidades, formas de"
             "comunicação e obter o comprometimento em relação ao trabalho para"
-            "eles alocado na execução das práticas de Talento Humano;",
-        "Planejar recursos gerais para execução das práticas de Talento"
-            "Humano;",
-        "Identificar e priorizar riscos relacionados às práticas de Talento"
-            "Humano. Ações de contingenciamento e mitigação não são exigidas"
-            "para este objetivo;",
+            "eles alocado na execução das práticas de Inovação;",
+        "Planejar recursos gerais para execução das práticas de Inovação;"
+            "Identificar e priorizar riscos relacionados às práticas de Inovação."
+            "Ações de contingenciamento e mitigação não são exigidas para este"
+            "objetivo;",
         "Planejar como será realizado o monitoramento e controle da execução"
-            "das práticas de Talento Humano;",
-        "Planejar como será feita s auditoria (TH.E3b) para garantir que todos"
-            "os objetivos da competência de Talento Humano (respeitando-se o seu"
-            "tipo) estejam sendo cumpridos;",
-        "Planejar como será feito o controle dos itens relevantes (TH.E3a)."
+            "das práticas de Inovação;",
+        "Planejar como será feita s auditoria (SA.E3b) para garantir que todos"
+            "os objetivos da competência de Inovação (respeitando-se o seu tipo)"
+            "estejam sendo cumpridos;",
+        "Planejar como será feito o controle dos itens relevantes (SA.E3a)."
       ],
       "IndicadoresObrigatorios": [
-        "%AçõesValorizaçãoPlanejadaXExecutadas",
-        "\$DistribuidoPlanXExecutado",
-        "CustoCapacitaçãoPlanXExecutado",
-        "HorasCapacitaçãoPlanXExecutadas",
-        "QtdeAçõesValorizaçãoPlanXExecutadas"
+        "CustoReduçãoEnergiaPlanXExecutado",
+        "HorasAçõesImpactosAmbientaisPlanXExecutada",
+        "HorasAssociativismoPlanXExecutada",
+        "QtdeAçõesDisseminaçãoCulturaPlanXExecutada",
+        "QtdeAçõesImpactosAmbientaisPlanXExecutada",
+        "QtdeAçõesSocioCulturaisPlanXExecutada",
+        "QtdeResidutosTratadosPlanXExecutado"
       ],
       "OutrosIndicadores": ["Não há."]
     },
-    "TH.E4b ": {
+    "SA.E4b ": {
       "resultadosEsperados":
           "Espera-se para este objetivo que os parâmetros planejados para a execução"
-              "das práticas de Talento Humano em TH.E4a sejam monitorados e"
-              "controlados e, ações corretivas sejam realizadas se desvios significativos"
-              "forem observados.",
+              "das práticas de Inovação em SA.E4a sejam monitorados e controlados e,"
+              "ações corretivas sejam realizadas se desvios significativos forem"
+              "observados.",
       "exemploDePraticas": [
         "Realizar monitoramento das atividades e parâmetros planejados em"
-            "THE4a;",
+            "SA.E4a;",
         "Identificar e realizar ações corretivas quando houver algum desvio"
             "significativo do planejado;",
-        "Replanejar a execução das práticas de Talento Humano quando"
+        "Replanejar a execução das práticas de Inovação quando"
             "necessário;",
         "Monitorar as ação corretivas até a sua conclusão;",
-        "Registrar lições aprendidas da execução das práticas de Talento"
-            "Humano;",
+        "Registrar lições aprendidas da execução das práticas de Inovação",
         "Estabelecer e alimentar base de desempenho."
       ],
       "IndicadoresObrigatorios": [
-        "%AçõesValorizaçãoPlanejadaXExecutadas",
-        "\$DistribuidoPlanXExecutado",
-        "CustoCapacitaçãoPlanXExecutado",
-        "HorasCapacitaçãoPlanXExecutadas",
-        "QtdeAçõesValorizaçãoPlanXExecutadas"
+        "CustoReduçãoEnergiaPlanXExecutado",
+        "HorasAçõesImpactosAmbientaisPlanXExecutada",
+        "HorasAssociativismoPlanXExecutada",
+        "QtdeAçõesDisseminaçãoCulturaPlanXExecutada",
+        "QtdeAçõesImpactosAmbientaisPlanXExecutada",
+        "QtdeAçõesSocioCulturaisPlanXExecutada",
+        "QtdeResidutosTratadosPlanXExecutado"
       ],
       "OutrosIndicadores": ["Não há"]
     },
-    "TH.E4c ": {
-      "resultadosEsperados":
-          "Espera-se para este objetivo que indicadores e metas relacionada às"
-              "práticas de Talento Humano estejam estabelecidos, mantidos e utilizados."
-              "Os indicadores e metas devem representar aspectos que são relevantes"
-              "para a unidade de negócio, ou seja, devem estar alinhados aos seus"
-              "objetivos de negócio. Espera-se também para este objetivo que uma base"
-              "de desempenho das práticas da competência de Talento Humano seja"
-              "estabelecida com o intuito de ser possível analisá-la no futuro e"
-              "estabelecer um conjunto de práticas padrão (ativos).",
+    "SA.E4c ": {
+      "resultadosEsperados": "Espera-se para este objetivo que indicadores e metas relacionada às"
+          "práticas de Inovação estejam estabelecidos, mantidos e utilizados. Os"
+          "indicadores e metas devem representar aspectos que são relevantes para a"
+          "unidade de negócio, ou seja, devem estar alinhados aos seus objetivos de"
+          "negócio. Espera-se também para este objetivo que uma base de"
+          "desempenho das práticas da competência de Inovação seja estabelecida"
+          "com o intuito de ser possível analisá-la no futuro e estabelecer um"
+          "conjunto de práticas padrão (ativos).",
       "exemploDePraticas": [
-        "Definir os indicadores e metas de controle das práticas de Talento"
-            "Humano, os responsáveis por sua análise, como serão coletados,"
-            "armazenados e validados (para que representem fatos verídicos);",
+        "Definir os indicadores e metas de controle das práticas de Inovação, os"
+            "responsáveis por sua análise, como serão coletados, armazenados e"
+            "validados (para que representem fatos verídicos);",
         "Planejar como será realizado o monitoramento e controle da execução"
-            "das práticas de Talento Humano usando os indicadores e as metas"
-            "definidas (uma ampliação do objetivo TH.E4a);",
-        "Monitorar as práticas de Talento Humano em relação aos indicadores"
-            "e metas e realizar ações corretivas caso se desviem do planejado (uma"
-            "ampliação do objetivo TH.E4b);",
+            "das práticas de Inovação usando os indicadores e as metas definidas"
+            "(uma ampliação do objetivo SA.E4a)",
+        "Monitorar as práticas de Inovação em relação aos indicadores e metas"
+            "e realizar ações corretivas caso se desviem do planejado (uma"
+            "ampliação do objetivo SA.E4b);",
         "Identificar e realizar ações corretivas quando houver algum desvio"
             "significativo das metas estabelecidas (uma ampliação do objetivo"
-            "TH.E4b);",
-        "Gerenciar as ações corretivas até sua finalização;",
+            "SA.E4b); Gerenciar as ações corretivas até sua finalização;",
         "Criar uma base histórica do desempenho da execução das práticas de"
             "Talento Humano;",
         "Alimentar a base histórica de desempenho com dados realistas e"
             "confiáveis."
       ],
       "IndicadoresObrigatorios": [
-        "%AçõesValorizaçãoPlanejadaXExecutadas",
-        "\$DistribuidoPlanXExecutado",
-        "CustoCapacitaçãoPlanXExecutado,HorasCapacitaçãoPlanXExecutadas",
-        "QtdeAçõesValorizaçãoPlanXExecutadas",
-        "%MetasAtingidasTH"
+        "CustoReduçãoEnergiaPlanXExecutado",
+        "HorasAçõesImpactosAmbientaisPlanXExecutada",
+        "HorasAssociativismoPlanXExecutada",
+        "QtdeAçõesDisseminaçãoCulturaPlanXExecutada",
+        "QtdeAçõesImpactosAmbientaisPlanXExecutada",
+        "QtdeAçõesSocioCulturaisPlanXExecutada",
+        "QtdeResidutosTratadosPlanXExecutado"
       ],
       "OutrosIndicadores": ["Não há"]
     },
-    "THE.5a ": {
+    "SA.E5a ": {
       "resultadosEsperados":
           "Espera-se para este objetivo que, com base nas lições aprendidas e nas"
-              "medições históricas da execução das práticas de Talento Humano"
-              "(base histórica de desempenho), sejam estabelecidos padrões (e/ou"
-              "ativos). Estes padrões devem ser usados e controlados e mecanismos"
-              "para sua seleção e escolha, quando da necessidade da execução das"
-              "práticas, devem estar claramente definidos.",
+              "medições históricas da execução das práticas de Inovação (base"
+              "histórica de desempenho), sejam estabelecidos padrões (e/ou ativos)."
+              "Estes padrões devem ser usados e controlados e mecanismos para sua"
+              "seleção e escolha, quando da necessidade da execução das práticas,"
+              "devem estar claramente definidos.",
       "exemploDePraticas": [
         "Definir, estabelecer e manter padrões para a execução das práticas"
-            "de Talento Humano, como por exemplo: templates, processos,"
+            "de Inovação, como por exemplo: templates, processos,"
             "orientações, métodos, ambientes de trabalho, documentos de"
             "orientação, guias, diretrizes, desempenho padrão esperado,"
             "taxonomia de riscos, base de desempenho, checklist de auditorias"
             "de processo e produto, entre outros;",
         "Estabelecer e manter um sistema para controle dos padrões e/ou"
-            "ativos das práticas de Talento Humano, que envolva por exemplo:"
+            "ativos das práticas de Inovação, que envolva por exemplo:"
             "armazenamento, acesso, responsabilidade, localização, proprietário,"
-            "entre outros (pode-se usar o mesmo controle definido em TH.E3a,"
+            "entre outros (pode-se usar o mesmo controle definido em SA.E3a,"
             "contudo, agora para os padrões);",
         "Definir critérios e formas de uso dos padrões e/ou ativos;",
-        "Usar os padrões e/ou ativos na execução das práticas de Talento"
-            "Humano e realimentar as lições aprendidas e base histórica de"
-            "desempenho;"
+        "Usar os padrões e/ou ativos na execução das práticas de Inovação"
+            "e realimentar as lições aprendidas e base histórica de desempenho;"
       ],
       "IndicadoresObrigatorios": [
-        "QtdeNãoConformidadesTH",
-        "QtdeNãoConformidadesResolvidasTH",
+        "QtdeNãoConformidadesSA",
+        "QtdeNãoConformidadesResolvidasSA",
         "%ItensAuditadosXNãoConformes",
         "%ItensPlanAuditoriaXAuditados"
       ],
       "OutrosIndicadores": ["Não há"]
     },
-    "THE.5b ": {
-      "resultadosEsperados":
-          "Espera-se para este objetivo que seja feita a identificação, análise,"
-              "priorização e execução de melhorias nos padrões para execução das"
-              "práticas da competência de Talento Humano. Deve-se considerar na"
-              "identificação e análises, mas não restrito a, as lições aprendidas e base"
-              "histórica de desempenho. Após análise, estas melhorias devem ser"
-              "priorizadas e selecionadas para implementação nos padrões da unidade"
-              "de negócio. As melhorias selecionadas devem ser implementadas de"
-              "forma sistemática observando-se o comportamento da mudança,"
-              "especialmente em relação à melhoria do desempenho. A melhoria"
-              "implementada, se decidida sua continuidade, deve ser institucionalizada"
-              "e incorporada aos padrões (vide TH.E5a). As mudanças nos padrões"
-              "devem ser comunicadas às pessoas envolvidas e interessadas e"
-              "mecanismos de transição dos padrões estabelecidos.",
+    "SA.E5b ": {
+      "resultadosEsperados": "Espera-se para este objetivo que seja feita a identificação, análise,"
+          "priorização e execução de melhorias nos padrões para execução das"
+          "práticas da competência de Inovação. Deve-se considerar na identificação"
+          "e análises, mas não restrito a, as lições aprendidas e base histórica de"
+          "desempenho. Após análise, estas melhorias devem ser priorizadas e"
+          "selecionadas para implementação nos padrões da unidade de negócio. As"
+          "melhorias selecionadas devem ser implementadas de forma sistemática"
+          "observando-se o comportamento da mudança, especialmente em relação"
+          "à melhoria do desempenho. A melhoria implementada, se decidida sua"
+          "continuidade, deve ser institucionalizada e incorporada aos padrões (vide"
+          "SA.E5a). As mudanças nos padrões devem ser comunicadas às pessoas"
+          "envolvidas e interessadas e mecanismos de transição dos padrões"
+          "estabelecidos.",
       "exemploDePraticas": [
         "Estabelecer e manter mecanismos para captura de sugestões de"
             "melhoria e lições aprendidas;",
@@ -553,8 +548,8 @@ class ObjetivoList extends StatefulWidget {
             "transição de uso e comunicando as pessoas interessadas;"
       ],
       "IndicadoresObrigatorios": [
-        "QtdeNãoConformidadesTH",
-        "QtdeNãoConformidadesResolvidasTH",
+        "QtdeNãoConformidadesSA",
+        "QtdeNãoConformidadesResolvidasSA",
         "%ItensAuditadosXNãoConformes",
         "%ItensPlanAuditoriaXAuditados",
         "QtdeMelhoriasColetadas",

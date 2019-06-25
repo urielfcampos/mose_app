@@ -297,8 +297,8 @@ class ObjetivoList extends StatefulWidget {
 
         """,
         " Estabelecendo metas de disponibilidade a serem atingidas (podendo ser"
-"detalhado em: tipo de atendimento, região, serviço, horários, clientes,"
-"datas específicas, entre outros);",
+            "detalhado em: tipo de atendimento, região, serviço, horários, clientes,"
+            "datas específicas, entre outros);",
         "Analisar as metas de disponibilidade gerando ações no caso de seu não cumprimento;",
         " Gerenciar ações até sua finalização.",
       ],
@@ -313,109 +313,125 @@ class ObjetivoList extends StatefulWidget {
       ]
     },
     "CM.8 Ab": {
-      "resultadosEsperados": "Espera-se para este resultado que a unidade de negócio conheça a sua"
-          "capacidade de produção e entrega dos bens e serviços, garantindo o"
-          "cumprimento dos acordos. Metas de produção estabelecidas para os"
-          "portfólios (GQ.5) devem estar sendo alcançadas ou trabalhadas para"
-          "serem alcançadas ao longo do tempo. Para isso, deve-se ter uma visão da"
-          "produção da unidade de negócio realística. A capacidade de produção"
-          "também pode ser comprometida por eventos, como a interrupção do"
-          "trabalho de alguma equipe. Desta forma, espera-se para este objetivo que"
-          "eventos indesejáveis e comprometedores da capacidade de produção"
-          "sejam identificados e que haja um planejamento prévio do que fazer no"
-          "caso de sua incidência. Ou seja, devem-se ter ações preventivas para que"
-          "a “maquina de produção” de bens e/ou serviços não seja interrompida."
-          "Para este objetivo, espera-se também que os planos de incidência dos"
-          "eventos sejam testados, quando possível.",
+      "resultadosEsperados": "Espera-se para este objetivo que sejam estabelecidos e mantidos canais de"
+          "relacionamento e comunicação com o mercado-foco. Estudos devem ser"
+          "realizados para observar se a forma de relacionamento com o mercadofoco"
+          "está sendo eficiente e ajustes devem ser realizados quando esta"
+          "comunicação não surte efeitos positivos para o negócio. Canais de"
+          "relacionamento com os clientes devem existir e possibilitar uma"
+          "comunicação efetiva. Metas de satisfação dos clientes devem ser definidas"
+          "e analisadas e ações para seu alcance devem ser realizadas. As metas"
+          "devem estar estabelecidas considerando os portfólios definidos em CM.5.",
       "exemploDePraticas": [
         """
-        Analisar a capacidade de produção de bens e serviços (considerando os
-        portfólios e metas definidos em GQ.5);
+        Estabelecer canais para o relacionamento com os clientes;
         """,
-        "Observar o comportamento da produção de bens e serviços e tomar"
-            "ações preventivas para que as metas de produção sejam alcançadas;",
-        "Gerenciar as ações preventivas da produção até sua finalização;",
-        "Identificar eventos ou situações que podem interromper a produção"
-            "das equipes (ex: queda de energia, falta de insumo, problemas"
-            "climáticos, entre outros);",
-        "Desenvolver um plano a ser seguido para o caso de ocorrência dos"
-            "eventos que interrompem as equipes;",
-        "Testar os planos, verificando se os mesmos funcionam adequadamente."
+        "Desenvolver pesquisas de satisfação, analisá-las e tomar ações no caso"
+            "de não cumprimento das metas de satisfação pré-definidas;",
+        "Estudar o mercado-foco e possíveis formas de se comunicar com os"
+            "clientes (tanto atuais quanto potenciais);",
+        "Realizar pesquisas de mercado para entender a aceitabilidade dos bens"
+            "e serviços ofertados;",
+        "Analisar comunicação realizada pela unidade de negócio e concorrentes"
+            "e entender as fraquezas e fortalezas;",
+        "Construir estratégia de comunicação com o mercado e estabelecer a"
+            "comunicação que será realizada com os clientes no mercado-foco, por"
+            "exemplo: sites, eventos, palestras, workshops, visitas, mailing list,"
+            "simpósios, entre outros;",
+        'Estabelecer metas a serem atingidas com a comunicação;',
+        'Analisar se a comunicação realizada está surtindo o efeito esperado'
+            'para o negócio, especialmente em relação a metas pré-definidas;',
+        'Conhecer o market size e target market;',
+        'Desenvolver sites com o conteúdo dos serviços e bens já prestados,'
+            'deixando claro quais foram seus clientes.'
       ],
       "IndicadoresObrigatorios": [
-        "\$EntradaBem e/ou \$EntradaServiço",
-        "\$SaídaBem e/ou \$SaídaServiço",
-        "\$ResultadoBem e/ou \$ResultadoServiço",
-        "QtdeBensEntreguesXBem e/ou QtdeServiçsoEntreguesXServiço"
+        "%PerdaClientes, %GanhoClientes, %SatisfaçãoClientes",
+        "TargetMarket, MarketSize",
+        "\$CustoMarketing",
+        "HorasMarketing"
       ],
       "OutrosIndicadores": [
-        "\$ResultadoBemPlanXExec e/ou \$ResultadoServiçoPlanXExec",
-        "HorasProduçãoPlanXExec",
-        "CustoProduçãoPlanXExec",
-        "%MetasAtingidasXBem e/ou %MetasAtingidasXServiço"
+        "%SatisfaçãoClientes",
+        "%GanhoClientes, %PercaClientes",
       ]
     },
-    "GQ.9 Es": {
+    "CM.9 In": {
       "resultadosEsperados":
-          "Espera-se para este objetivo que riscos (negativos e positivos) relativos"
-              "ao negócio e à produção de bens e serviços sejam identificados,"
-              "quantificados (probabilidade e impacto) e priorizados. Após a"
-              "priorização, um conjunto de riscos, preferencialmente os riscos que"
-              "provoquem o não atendimento das metas críticas de negócio e produção,"
-              "deve ser contingenciado e/ou mitigado.",
+          "Espera-se para este objetivo que incidentes da entrega dos bens e/ou"
+              "serviços sejam tratados em tempo de não gerar desgastes com o"
+              "cliente. Entende-se por incidente qualquer evento não planejado que"
+              "tem o potencial de levar a um acidente na entrega do bem e/ou"
+              "serviço desenvolvido para o cliente. Os incidentes, além de serem"
+              "resolvidos, devem também ser registrados e análises periódicas"
+              "devem ser realizadas com a intenção de preveni-los.",
       "exemploDePraticas": [
-        "Identificar, avaliar, quantificar, priorizar os riscos relacionados ao"
-            "negócio e à gestão e produção de bens e serviços;",
-        "Identificar ações para o contigenciamento e mitigação dos riscos,"
-            "monitorando-as frente a sua efetividade, e modificá-las caso não"
-            "estejam surtindo os resultados previstos;",
-        "Desenvolver uma base de conhecimento em relação aos riscos"
-            "identificados ao longo do tempo e às ações que foram realizadas, com"
-            "o intuito de amadurecer continuamente a gestão de riscos.",
+        "Definir estratégia para resolução de incidentes (ex: o que é um"
+            "incidente, equipe que deve estar apta a resolvê-lo e analisá-lo, onde"
+            "registrá-lo, categorização por tipo de cliente, periodicidade de análise,"
+            "entre outros);",
+        "Identificar incidentes;",
+        "Resolver incidentes ocorridos;",
+        "Registrar os incidentes;",
+        "Mapear potenciais incidentes ao longo do ciclo de vida de determinados"
+            "serviços;",
+        "Mapear potenciais incidentes de entrega de produtos;",
+        "Definir método para análise de impacto de incidentes;",
+        "Analisar periodicamente os incidentes e realizar ações para sua"
+            "prevenção;",
+        "Gerenciar ações de prevenção até a sua conclusão."
       ],
-      "IndicadoresObrigatorios": ["QtdeAçõesRealizadasRisco"],
-      "OutrosIndicadores": ["%AçõesRealizadasRisco"]
+      "IndicadoresObrigatorios": [
+        "QtdeIncidentes",
+        "%IncidentesResolvidos",
+        "HorasResoluçãoIncidentes",
+        "HorasPrevençãoIncidentes"
+      ],
+      "OutrosIndicadores": [
+        "%SatisfaçãoClientes",
+        "%GanhoClientes, %PercaClientes"
+      ]
     },
-    "GQ.E0 N": {
+    "CM.E0 N": {
       "resultadosEsperados":
-          "Nenhum dos objetivos de competência de Gestão e Qualidade"
+          "Nenhum dos objetivos de competência de Cliente e Mercado"
               "(respeitando-se o seu perfil) é satisfeito pelas práticas executadas na"
               "unidade de negócio.",
-      "exemploDePraticas": ["Vide as práticas citadas em GQ.1 a GQ.9"],
-      "IndicadoresObrigatorios": ["Vide os indicadores citados em GQ.1 a GQ.9"],
-      "OutrosIndicadores": ["Vide os indicadores citados em GQ.1 a GQ.9"]
+      "exemploDePraticas": ["Vide as práticas citadas em CM.1 a CM.9"],
+      "IndicadoresObrigatorios": ["Vide os indicadores citados em CM.1 a CM.9"],
+      "OutrosIndicadores": ["Vide os indicadores citados em CM.1 a CM.9"]
     },
-    "GQ.E1 A": {
+    "CM.E1 A": {
       "resultadosEsperados":
           "Espera-se para este objetivo que pelo menos um dos objetivos de"
-              "competência para a dimensão de Gestão e Qualidade (respeitando-se"
-              "o seu perfil) esteja sendo satisfeito pelas práticas executadas da"
+              "competência para a dimensão de Cliente e Mercado (respeitando-se o"
+              "seu perfil) esteja sendo satisfeito pelas práticas executadas da"
               "unidade de negócio.",
-      "exemploDePraticas": ["Vide as práticas citadas em GQ.1 a GQ.9"],
-      "IndicadoresObrigatorios": ["Vide os indicadores citados em GQ.1 a GQ.9"],
-      "OutrosIndicadores": ["Vide os indicadores citados em GQ.1 a GQ.9"]
+      "exemploDePraticas": ["Vide as práticas citadas em CM.1 a CM.9"],
+      "IndicadoresObrigatorios": ["Vide os indicadores citados em CM.1 a CM.9"],
+      "OutrosIndicadores": ["Vide os indicadores citados em CM.1 a CM.9"]
     },
-    "GQ.E2 T": {
+    "CM.E2 T": {
       "resultadosEsperados":
           "Espera-se para este objetivo que todos os objetivos da competência"
-              "para a dimensão de Gestão e Qualidade (respeitando-se o seu tipo)"
+              "para a dimensão de Cliente e Mercado (respeitando-se o seu tipo)"
               "estejam sendo satisfeitos pelas práticas executadas da unidade de"
               "negócio.",
-      "exemploDePraticas": ["Vide as práticas citadas em GQ.1 a GQ.9"],
-      "IndicadoresObrigatorios": ["Vide os indicadores citados em GQ.1 a GQ.9"],
-      "OutrosIndicadores": ["Vide os indicadores citados em GQ.1 a GQ.9"]
+      "exemploDePraticas": ["Vide as práticas citadas em CM.1 a CM.9"],
+      "IndicadoresObrigatorios": ["Vide os indicadores citados em CM.1 a CM.9"],
+      "OutrosIndicadores": ["Vide os indicadores citados em CM.1 a CM.9"]
     },
-    "GQ.E3a ": {
+    "CM.E3a ": {
       "resultadosEsperados":
           "Espera-se para este objetivo que itens relevantes (insumos, produtos,"
               "ferramentas, documentos, entre outros) utilizados e gerados pela"
-              "execução das práticas de Gestão e Qualidade estejam controlados."
+              "execução das práticas de Cliente e Mercado estejam controlados."
               "Controlá-los envolve saber: onde estarão armazenados, quem pode ter"
               "acesso a eles, quem aprova e como será o controle de suas mudanças.",
       "exemploDePraticas": [
         "Identificar os itens que são relevantes (insumos, produtos, dados,"
             "ferramentas, documentos, entre outros) para o desenvolvimento das"
-            "práticas de Gestão e Qualidade;",
+            "práticas de Cliente e Mercado;",
         "Estabelecer mecanismos para controlar os itens relevantes (ex:"
             "ferramentas, ambientes físicos, etiquetagem, controle de acesso,"
             "versionamentos, controle de mudanças, quem é o “dono” do item,"
@@ -424,180 +440,182 @@ class ObjetivoList extends StatefulWidget {
       "IndicadoresObrigatorios": ["Não há"],
       "OutrosIndicadores": ["Não há"]
     },
-    "GQ.E3b ": {
+    "CM.E3b ": {
       "resultadosEsperados":
-          "Espera-se para este objetivo que as práticas de Gestão e Qualidade (GQ.1"
-              "a GQ.9, conforme o perfil da unidade de negócio) sejam auditadas"
+          "Espera-se para este objetivo que as práticas de Cliente e Mercado (CM.1"
+              "a CM.9, conforme o perfil da unidade de negócio) sejam auditadas"
               "observando se estão sendo executadas e se cumprem os padrões (se"
               "houver). Deve-se também considerar para este objetivo auditar os itens"
-              "relevantes definidos em GQ.E3a. As auditorias envolvem observar"
+              "relevantes definidos em CM.E3a. As auditorias envolvem observar"
               "aspectos importantes das práticas de forma mais objetiva possível e ter"
               "também insights a respeito de possíveis melhorias em sua execução.",
       "exemploDePraticas": [
         "Selecionar os padrões que devem ser seguidos;",
-        "Selecionar práticas de Gestão e Qualidade que devem ser executadas;",
-        "Criar critérios para a auditoria da execução das práticas de Gestão e"
-            "Qualidade como: periodicidade, necessidade, padrões a serem"
-            "seguidos, etc;",
-        "Criar checklist de auditoria para as práticas de Gestão e Qualidade;",
+        "Selecionar práticas de Cliente e Mercado que devem ser executadas;",
+        "Criar critérios para a auditoria da execução das práticas de Cliente e"
+            "Mercado como: periodicidade, necessidade, padrões a serem seguidos,"
+            "etc;",
+        "Criar checklist de auditoria para as práticas de Cliente e Mercado;",
         "Criar checklist de auditoria para verificar se os itens relevantes das"
-            "práticas de Gestão e Qualidade seguem os padrões definidos;",
+            "práticas de Cliente e Mercado seguem os padrões definidos;",
         "Executar auditorias identificando as não conformidades;",
         "Corrigir as não conformidades identificadas, se pertinente e possível;",
         "Planejar, monitorar e controlar as atividades específicas de auditoria;"
       ],
       "IndicadoresObrigatorios": [
-        "QtdeNãoConformidadesGQ",
-        "QtdeNãoConformidadesResolvidasGQ"
+        "QtdeNãoConformidadesCM",
+        "QtdeNãoConformidadesResolvidasCM"
       ],
       "OutrosIndicadores": ["Não há"]
     },
-    "GQ.E4a ": {
+    "CM.E4a ": {
       "resultadosEsperados":
           "Espera-se para este objetivo que a execução das práticas que satisfazem a"
-              "competência de Gestão e Qualidade seja planejada. Este planejamento"
+              "competência de Cliente e Mercado seja planejada. Este planejamento"
               "envolve a definição de: colaboradores envolvidos, recursos necessários,"
               "custo, tempo, esforço, riscos, comunicação e necessidades de"
-              "treinamento. Atividades relacionadas às auditorias (GQ.E3b) e controle"
-              "dos itens relevantes (GQ.E3a) devem também ser planejados. Deve-se"
+              "treinamento. Atividades relacionadas às auditorias (CM.E3b) e controle"
+              "dos itens relevantes (CM.E3a) devem também ser planejados. Deve-se"
               "definir também como será realizado o monitoramento e controle da"
-              "execução das práticas de Gestão e Qualidade.",
+              "execução das práticas de Cliente e Mercado.",
       "exemploDePraticas": [
         "Planejar esforço, tempo (cronograma) e custo, estimando as atividades"
-            "e produtos que serão gerados pelas práticas de Gestão e Qualidade;",
+            "e produtos que serão gerados pelas práticas de Cliente e Mercado;",
         "Planejar os recursos humanos, suas responsabilidades, formas de"
             "comunicação e obter o comprometimento em relação ao trabalho para"
-            "eles alocado na execução das práticas de Gestão e Qualidade;",
-        "Planejar recursos gerais para execução das práticas de Gestão e"
-            "Qualidade;",
-        "Identificar e priorizar riscos relacionados às práticas de Gestão e"
-            "Qualidade. Ações de contingenciamento e mitigação não são exigidas"
-            "para este objetivo;",
+            "eles alocado na execução das práticas de Cliente e Mercado;",
+        "Planejar recursos gerais para execução das práticas de Cliente e"
+            "Mercado; Identificar e priorizar riscos relacionados às práticas de"
+            "Cliente e Mercado. Ações de contingenciamento e mitigação não são"
+            "exigidas para este objetivo;",
         "Planejar como será realizado o monitoramento e controle da execução"
-            "das práticas de Gestão e Qualidade;",
-        "Planejar como será feita s auditoria (GQ.E3b) para garantir que todos"
-            "os objetivos da competência de Gestão e Qualidade (respeitando-se o"
+            "das práticas de Cliente e Mercado;",
+        "Planejar como será feita s auditoria (CM.E3b) para garantir que todos"
+            "os objetivos da competência de Cliente e Mercado (respeitando-se o"
             "seu tipo) estejam sendo cumpridos;",
-        "Planejar como será feito o controle dos itens relevantes (GQ.E3a)."
+        "Planejar como será feito o controle dos itens relevantes (CM.E3a)."
       ],
       "IndicadoresObrigatorios": [
-        "%MetasAtingidas",
-        "%MetasAtingidasXEquipe",
-        "\$EntradasPlanXExecutada; \$SaidaPlanXExecutada",
-        "\$ResultadoPlanXExecutado",
-        "HorasProduçãoPlanXExecutada",
-        "QtdeAcordosOperacionaisNãoCumpridos",
-        "QtdeBensEntregues(e/ou QtdeServiçosEntregues)PlanXExecutados",
-        "QtdeBensRejeitados(e/ou QtdeServiçosRejeitados)PlanXExecutados"
+        "CustoVendaPlanXExecutada, HorasVendaPlanXExecutada",
+        "%SatisfaçãoClientePlanXExecutada",
+        "%PerdaClientePlanXExecutada,%GanhoClientePlanXExecutado",
+        "CustoAtendimentoPlanXExecutado",
+        "HorasAtendimentoPlanXExecutado",
+        "CustoMarketingPlanXExecutado, HorasMarketingPlanXExecutada",
+        "CustoRelacionamentoPlanXExecutado",
+        "HorasRelacionamentoPlanXExecutada",
+        "CustoVendaPlanXExecutada, HorasVendaPlanXExecutada"
       ],
       "OutrosIndicadores": ["Não há."]
     },
-    "GQ.E4b ": {
+    "CM.E4b ": {
       "resultadosEsperados":
           "Espera-se para este objetivo que os parâmetros planejados para a execução"
-              "das práticas de Gestão e Qualidade em GQ.E4a sejam monitorados e"
+              "das práticas de Cliente e Mercado em CM.E4a sejam monitorados e"
               "controlados e, ações corretivas sejam realizadas se desvios significativos"
               "forem observados.",
       "exemploDePraticas": [
         "Realizar monitoramento das atividades e parâmetros planejados em"
-            "QG.E4a;",
+            "CM.E4a;",
         "Identificar e realizar ações corretivas quando houver algum desvio"
             "significativo do planejado;",
-        "Replanejar a execução das práticas de Gestão e Qualidade quando"
+        "Replanejar a execução das práticas de Cliente e Mercado quando"
             "necessário;",
         "Monitorar as ação corretivas até a sua conclusão;",
-        "Registrar lições aprendidas da execução das práticas de Gestão e"
-            "Qualidade;",
+        "Registrar lições aprendidas da execução das práticas de Cliente e"
+            "Mercado;",
         "Estabelecer e alimentar base de desempenho."
       ],
       "IndicadoresObrigatorios": [
-        "%MetasAtingidas",
-        "%MetasAtingidasXEquipe",
-        "\$EntradasPlanXExecutada; \$SaidaPlanXExecutada",
-        "\$ResultadoPlanXExecutado",
-        "HorasProduçãoPlanXExecutada",
-        "QtdeAcordosOperacionaisNãoCumpridos",
-        "QtdeBensEntregues(e/ou QtdeServiçosEntregues)PlanXExecutados",
-        "QtdeBensRejeitados(e/ou QtdeServiçosRejeitados)PlanXExecutados"
+        "CustoVendaPlanXExecutada, HorasVendaPlanXExecutada",
+        "%SatisfaçãoClientePlanXExecutada",
+        "%PerdaClientePlanXExecutada,%GanhoClientePlanXExecutado",
+        "CustoAtendimentoPlanXExecutado",
+        "HorasAtendimentoPlanXExecutado",
+        "CustoMarketingPlanXExecutado, HorasMarketingPlanXExecutada",
+        "CustoRelacionamentoPlanXExecutado",
+        "HorasRelacionamentoPlanXExecutada",
+        "CustoVendaPlanXExecutada, HorasVendaPlanXExecutada"
       ],
       "OutrosIndicadores": ["Não há"]
     },
-    "GQ.E4c ": {
+    "CM.E4c ": {
       "resultadosEsperados": "Espera-se para este objetivo que indicadores e metas relacionada às"
-          "práticas de Gestão e Qualidade estejam estabelecidos, mantidos e"
+          "práticas de Cliente e Mercado estejam estabelecidos, mantidos e"
           "utilizados. Os indicadores e metas devem representar aspectos que são"
           "relevantes para a unidade de negócio, ou seja, devem estar alinhados aos"
           "seus objetivos de negócio. Espera-se também para este objetivo que uma"
-          "base de desempenho das práticas da competência de Gestão e Qualidade"
+          "base de desempenho das práticas da competência de Cliente e Mercado"
           "seja estabelecida com o intuito de ser possível analisá-la no futuro e"
           "estabelecer um conjunto de práticas padrão (ativos).",
       "exemploDePraticas": [
-        "Definir os indicadores e metas de controle das práticas de Gestão e"
-            "Qualidade, os responsáveis por sua análise, como serão coletados,"
+        "Definir os indicadores e metas de controle das práticas de Cliente e"
+            "Mercado, os responsáveis por sua análise, como serão coletados,"
             "armazenados e validados (para que representem fatos verídicos);",
         "Planejar como será realizado o monitoramento e controle da execução"
-            "das práticas de Gestão e Qualidade usando os indicadores e as metas"
-            "definidas (uma ampliação do objetivo GQ.E4a);",
-        "Monitorar as práticas de Gestão e Qualidade em relação aos"
-            "indicadores e metas e realizar ações corretivas caso se desviem do"
-            "planejado (uma ampliação do objetivo GQ.E4b);",
+            "das práticas de Cliente e Mercado usando os indicadores e as metas"
+            "definidas (uma ampliação do objetivo CM.E4a);",
+        "Monitorar as práticas de Cliente e Mercado em relação aos indicadores"
+            "e metas e realizar ações corretivas caso se desviem do planejado (uma"
+            "ampliação do objetivo CM.E4b);",
         "Identificar e realizar ações corretivas quando houver algum desvio"
             "significativo das metas estabelecidas (uma ampliação do objetivo"
-            "GQ.E4b);",
-        "Gerenciar as ações corretivas até sua finalização;",
+            "CM.E4b); Gerenciar as ações corretivas até sua finalização;",
         "Criar uma base histórica do desempenho da execução das práticas de"
-            "Gestão e Qualidade;",
-        "Alimentar a base histórica de desempenho com"
+            "Cliente e Mercado; Alimentar a base histórica de desempenho com"
             "dados realistas e confiáveis."
       ],
       "IndicadoresObrigatorios": [
-        "%MetasAtingidas, %MetasAtingidasXEquipe",
-        "\$EntradasPlanXExecutada; \$SaidaPlanXExecutada",
-        "\$ResultadoPlanXExecutado, HorasProduçãoPlanXExecutada",
-        "QtdeAcordosOperacionaisNãoCumpridos",
-        "QtdeBensEntregues(e/ou QtdeServiçosEntregues)PlanXExecutados",
-        "QtdeBensRejeitados(e/ou QtdeServiçosRejeitados)PlanXExecutados"
+        "CustoVendaPlanXExecutada, HorasVendaPlanXExecutada",
+        "%SatisfaçãoClientePlanXExecutada",
+        "%PerdaClientePlanXExecutada,%GanhoClientePlanXExecutado",
+        "CustoAtendimentoPlanXExecutado",
+        "HorasAtendimentoPlanXExecutado",
+        "CustoMarketingPlanXExecutado, HorasMarketingPlanXExecutada",
+        "CustoRelacionamentoPlanXExecutado",
+        "HorasRelacionamentoPlanXExecutada",
+        "CustoVendaPlanXExecutada, HorasVendaPlanXExecutada"
       ],
       "OutrosIndicadores": ["Não há"]
     },
-    "GQ.E5a ": {
+    "CM.E5a ": {
       "resultadosEsperados":
           "Espera-se para este objetivo que, com base nas lições aprendidas e nas"
-              "medições históricas da execução das práticas de Gestão e Qualidade"
+              "medições históricas da execução das práticas de Cliente e Mercado"
               "(base histórica de desempenho), sejam estabelecidos padrões (e/ou"
               "ativos). Estes padrões devem ser usados e controlados e mecanismos"
               "para sua seleção e escolha, quando da necessidade da execução das"
               "práticas, devem estar claramente definidos.",
       "exemploDePraticas": [
         "Definir, estabelecer e manter padrões para a execução das práticas"
-            "de Gestão e Qualidade, como por exemplo: templates, processos,"
+            "de Cliente e Mercado, como por exemplo: templates, processos,"
             "orientações, métodos, ambientes de trabalho, documentos de"
             "orientação, guias, diretrizes, desempenho padrão esperado,"
             "taxonomia de riscos, base de desempenho, checklist de auditorias"
             "de processo e produto, entre outros;",
         "Estabelecer e manter um sistema para controle dos padrões e/ou"
-            "ativos das práticas de Gestão e Qualidade, que envolva por exemplo:"
+            "ativos das práticas de Cliente e Mercado, que envolva por exemplo:"
             "armazenamento, acesso, responsabilidade, localização, proprietário,"
-            "entre outros (pode-se usar o mesmo controle definido em GQ.E3a,"
+            "entre outros (pode-se usar o mesmo controle definido em CM.E3a,"
             "contudo, agora para os padrões);",
         "Definir critérios e formas de uso dos padrões e/ou ativos;",
-        "Usar os padrões e/ou ativos na execução das práticas de Gestão e"
-            "Qualidade e realimentar as lições aprendidas e base histórica de"
+        "Usar os padrões e/ou ativos na execução das práticas de Cliente e"
+            "Mercado e realimentar as lições aprendidas e base histórica de"
             "desempenho;"
       ],
       "IndicadoresObrigatorios": [
-        "QtdeNãoConformidadesGQ",
-        "QtdeNãoConformidadesResolvidasGQ",
+        "QtdeNãoConformidadesCM",
+        "QtdeNãoConformidadesResolvidasCM",
         "%ItensAuditadosXNãoConformes",
         "%ItensPlanAuditoriaXAuditados"
       ],
       "OutrosIndicadores": ["Não há"]
     },
-    "GQ.E5b ": {
+    "CM.E5b ": {
       "resultadosEsperados":
           "Espera-se para este objetivo que seja feita a identificação, análise,"
               "priorização e execução de melhorias nos padrões para execução das"
-              "práticas da competência de Gestão e Qualidade. Deve-se considerar na"
+              "práticas da competência de Cliente e Mercado. Deve-se considerar na"
               "identificação e análises, mas não restrito a, as lições aprendidas e base"
               "histórica de desempenho. Após análise, estas melhorias devem ser"
               "priorizadas e selecionadas para implementação nos padrões da unidade"
@@ -605,7 +623,7 @@ class ObjetivoList extends StatefulWidget {
               "forma sistemática observando-se o comportamento da mudança,"
               "especialmente em relação à melhoria do desempenho. A melhoria"
               "implementada, se decidida sua continuidade, deve ser institucionalizada"
-              "e incorporada aos padrões (vide GQ.E5a). As mudanças nos padrões"
+              "e incorporada aos padrões (vide CM.E5a). As mudanças nos padrões"
               "devem ser comunicadas às pessoas envolvidas e interessadas e"
               "mecanismos de transição dos padrões estabelecidos.",
       "exemploDePraticas": [
@@ -622,8 +640,8 @@ class ObjetivoList extends StatefulWidget {
             "transição de uso e comunicando as pessoas interessadas;"
       ],
       "IndicadoresObrigatorios": [
-        "QtdeNãoConformidadesGQ",
-        "QtdeNãoConformidadesResolvidasGQ",
+        "QtdeNãoConformidadesCM",
+        "QtdeNãoConformidadesResolvidasCM",
         "%ItensAuditadosXNãoConformes",
         "%ItensPlanAuditoriaXAuditados",
         "QtdeMelhoriasColetadas",

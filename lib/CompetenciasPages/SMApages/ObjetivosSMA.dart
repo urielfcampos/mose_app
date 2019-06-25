@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'SMAObjComp.dart';
+
 class SMAobjetivos extends StatefulWidget {
   @override
   _SMAobjetivosState createState() => _SMAobjetivosState();
@@ -30,8 +32,9 @@ class _SMAobjetivosState extends State<SMAobjetivos>
         "contingenciamento e mitigação são planejadas e realizadas.": ["GRD"],
     "SA.8 Acordos são realizados com fornecedores relevantes.": ["GRD"],
     "SA.9 Legislação ambiental e trabalhista está sendo cumprida. (Este objetivo é "
-        "opcional para unidades de negócio que não possuam legislação associada)":
-        ["GRD"]
+        "opcional para unidades de negócio que não possuam legislação associada)": [
+      "GRD"
+    ]
   };
   final excelenciaMap = {
     "SA.E0 Nenhum objetivo da competência de Sociedade e Ambiente está sendo"
@@ -261,7 +264,12 @@ class _SMAobjetivosState extends State<SMAobjetivos>
           ),
           child: ListTile(
             title: Text(key),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => SMACompetencia(competencia: key)));
+            },
             trailing: Icon(Icons.forward),
           ),
         ));
