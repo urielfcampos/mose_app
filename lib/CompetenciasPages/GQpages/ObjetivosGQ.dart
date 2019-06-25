@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'GQObjComp.dart';
+
 class GQobjetivos extends StatefulWidget {
   @override
   _GQobjetivosState createState() => _GQobjetivosState();
@@ -257,7 +259,12 @@ class _GQobjetivosState extends State<GQobjetivos>
           ),
           child: ListTile(
             title: Text(key),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => GQCompetencia(competencia: key)));
+            },
             trailing: Icon(Icons.forward),
           ),
         ));
