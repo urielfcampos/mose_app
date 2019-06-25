@@ -270,52 +270,49 @@ class ObjetivoList extends StatefulWidget {
         "%ClientesInadimplentesXBem e/ou %ClientesInadimplentesXServiço"
       ]
     },
-    "GQ.7 Co": {
+    "CM.7 Ab": {
       "resultadosEsperados":
-          """Espera-se para este objetivo que sejam estabelecidos controles de qualidade
-              na produção dos bens e/ou serviços. O objetivo GQ.4 verifica a qualidade
-              final do bem ou serviço produzido enquanto GQ.7 estabelece esta
-              verificação durante a produção. Para esta verificação, devem-se inicialmente
-              identificar os itens relevantes (insumos, produtos intermediários,
-              ferramentas, entre outros) utilizados e gerados pela produção e garantir a
-              qualidade destes. Os itens identificados devem também ser controlados, e
-              seu controle envolve estabelecer: onde estarão armazenados, quem pode ter
-              acesso a eles, quem aprova, quais os critérios de qualidade esperada, e como
-              será o controle de suas mudanças. Ao avaliar os itens relevantes frente aos
-              critérios pré-estabelecidos, os defeitos identificados devem ser
-              comunicados, de preferência, em tempo hábil para que sejam resolvidos
-              antes de causar perda na qualidade do bem e/ou serviço que será entregue
-              ao cliente. Caso não seja possível resolver o defeito, justificativas devem ser
-              realizadas. Este objetivo parte do princípio de que problemas encontrados
-              em fases iniciais da produção geram menos custos e menos desgastes com o
-              cliente.""",
+          """Espera-se para este objetivo que sejam estabelecidos canais para o
+             atendimento das solicitações dos clientes e entrega dos bens e/ou serviços
+             produzidos pela unidade de negócio. Para o bom desempenho dos canais, é
+             necessário entender qual a sua disponibilidade, evitando que algum cliente
+             possa ficar sem atendimento e/ou em longas filas que possam vir a ter
+             impacto negativo ao negócio. A disponibilidade é determinada através da
+             quantidade de atendimentos que pode ser realizada pelos canais, podendo
+             variar conforme período (ex: datas festivas), horários (ex: comercial),
+             lançamento de novos serviços, entre outros. A determinação da
+             disponibilidade também deve considerar os acordos firmados com os
+             clientes (vide CM.1). Metas de disponibilidade para os canais devem ser
+             estabelecidas e devem ser analisadas periodicamente, realizando ajustes
+             para o caso de não estarem sendo cumpridas.
+             """,
       "exemploDePraticas": [
         """
-          Definir critérios de qualidade esperada para cada bem e/ou serviço a ser
-          entregue aos clientes;
+         Estabelecer canais para atendimento aos clientes que determinam a
+            forma como o cliente pode ser atendido para obter o bem e/ou serviço
+            desejado. Os canais envolvem: meios de comunicação, pessoas, software,
+            recursos, métodos, estruturas, horários, metas a serem alcançadas, entre
+            outros. Além do atendimento ao cliente, estes canais desempenham um
+            papel importante em vendas;
+
         """,
-        "Identificar os itens que são relevantes (insumos, produtos intermediários,"
-            "peças, dados, ferramentas, entre outros) para a produção dos bens e"
-            "serviços;",
-        "Estabelecer mecanismos para controlar os itens relevantes (ex:"
-            "ferramentas, ambientes físicos, controle de acesso, versionamentos,"
-            "controle de mudanças, quem é o “dono” do item, entre outros);",
-        "Desenvolver check-lists para serem utilizados nas avaliações (auditorias);",
-        "Criar critérios para verificação da qualidade dos itens relevantes e avaliálos"
-            "(auditoria) frente aos critérios pré-estabelecidos;",
-        "Corrigir os defeitos identificados nos itens relevantes, quando possível e"
-            "pertinente e realizar análise das justificativas dos defeitos não corrigidos.",
+        " Estabelecendo metas de disponibilidade a serem atingidas (podendo ser"
+"detalhado em: tipo de atendimento, região, serviço, horários, clientes,"
+"datas específicas, entre outros);",
+        "Analisar as metas de disponibilidade gerando ações no caso de seu não cumprimento;",
+        " Gerenciar ações até sua finalização.",
       ],
       "IndicadoresObrigatorios": [
-        "QtdeDefeitosBem e/ou QtdeDefeitosServiço",
-        "QtdeRejeiçãoBem e/ou QtdeRejeiçãoServiço",
-        "HorasResoluçãoDefeitos, CustoResoluçãoDefeitos"
+        "%DisponibilidadeAtendimento",
+        "%SatisfaçãoCliente",
       ],
       "OutrosIndicadores": [
-        "%DefeitosBemResolvidos e/ou %DefeitoServiçoResolvidos"
+        "%DisponibilidadeAtendimentoBem e/ou Serviço",
+        "CapacidadeEntregaBem e/ou CapacidadeEntregaServiço",
+        "%PerdaClientes, %GanhoClientes"
       ]
     },
-    "GQ.8 A ": {
+    "CM.8 Ab": {
       "resultadosEsperados": "Espera-se para este resultado que a unidade de negócio conheça a sua"
           "capacidade de produção e entrega dos bens e serviços, garantindo o"
           "cumprimento dos acordos. Metas de produção estabelecidas para os"
