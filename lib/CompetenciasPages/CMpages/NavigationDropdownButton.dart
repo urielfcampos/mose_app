@@ -43,6 +43,8 @@ class _NavigationButtonState extends State<NavigationButton> {
                     print(_dropDownValue);
                     _dropDownValue = newValue;
                   });
+
+                  getNextPage();
                 },
                 items: <String>['DESCRIÇÃO E FINALIDADE', 'Objetivos']
                     .map<DropdownMenuItem<String>>((String value) {

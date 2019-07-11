@@ -55,6 +55,7 @@ class _NavigationButtonState extends State<NavigationButton> {
                     print(_dropDownValue);
                     _dropDownValue = newValue;
                   });
+                  getNextPage();
                 },
                 items: <String>[
                   'Introdução',
@@ -81,7 +82,6 @@ class _NavigationButtonState extends State<NavigationButton> {
                 Icons.arrow_forward,
                 color: Colors.white,
               ),
-              onPressed: getNextPage,
             )
           ],
         ));

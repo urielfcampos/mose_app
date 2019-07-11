@@ -34,17 +34,6 @@ class About6 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(top: 10),
-              child: Container(
-                child: Text(
-                  'Perfis das Unidades de Negócio',
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.title,
-                ),
-                decoration: BoxDecoration(color: Colors.blue),
-              ),
-            ),
             Expanded(
               child: Scrollbar(
                 child: ListView.builder(

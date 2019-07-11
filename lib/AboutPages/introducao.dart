@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mose_app/AboutPages/NavigationDropdownButton.dart';
+
+import 'NavigationDropdownButton.dart';
 
 class About extends StatelessWidget {
   String firstTextPart =
@@ -35,53 +36,52 @@ class About extends StatelessWidget {
             )
           ],
         ),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(top: 10),
-              child: Container(
-                child: Text(
-                  "INTRODUÇÃO",
-                  textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.title,
+        body: LayoutBuilder(
+            builder: (BuildContext context, BoxConstraints viewport) {
+          return SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: viewport.maxHeight),
+              child: IntrinsicHeight(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    Flexible(
+                        child: Padding(
+                            padding: EdgeInsets.all(10),
+                            child: RichText(
+                                textAlign: TextAlign.justify,
+                                text: TextSpan(
+                                    style: Theme.of(context).textTheme.body1,
+                                    children: <TextSpan>[
+                                      TextSpan(text: firstTextPart),
+                                      TextSpan(
+                                          text: boldedTextPart,
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          )),
+                                      TextSpan(text: secondTextPart),
+                                    ])))),
+                    Flexible(
+                        child: Padding(
+                            padding: EdgeInsets.all(10),
+                            child: RichText(
+                                textAlign: TextAlign.justify,
+                                text: TextSpan(
+                                    style: Theme.of(context).textTheme.body1,
+                                    children: generateTextSpan())))),
+                    NavigationButton()
+                  ],
                 ),
-                decoration: BoxDecoration(color: Colors.blue),
               ),
             ),
-            Flexible(
-                child: Padding(
-                    padding: EdgeInsets.all(10),
-                    child: RichText(
-                        textAlign: TextAlign.justify,
-                        text: TextSpan(
-                            style: Theme.of(context).textTheme.body1,
-                            children: <TextSpan>[
-                              TextSpan(text: firstTextPart),
-                              TextSpan(
-                                  text: boldedTextPart,
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                              TextSpan(text: secondTextPart),
-                            ])))),
-            Expanded(
-              child: Scrollbar(
-                child: ListView.builder(
-                    itemCount: bulletPoints.length,
-                    padding: EdgeInsets.all(0),
-                    itemBuilder: (BuildContext cntx, int index) {
-                      return ListTile(
-                          leading: Text("✦"),
-                          title: Text(
-                            bulletPoints[index],
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ));
-                    }),
-              ),
-            ),
-            NavigationButton()
-          ],
-        ));
+          );
+        }));
+  }
+
+  List<TextSpan> generateTextSpan() {
+    List<TextSpan> BulletPoint = [];
+    bulletPoints.forEach(
+        (element) => {BulletPoint.add(TextSpan(text: "✦" + element + '\n'))});
+    return BulletPoint;
   }
 }

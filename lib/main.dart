@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
 
@@ -66,8 +68,8 @@ class _MoseAppState extends State<MoseApp> with SingleTickerProviderStateMixin {
         children: <Widget>[
           Container(
             margin: EdgeInsets.symmetric(vertical: 40),
-            height: 300,
-            width: 300,
+            width: getWidth(context),
+            height: getHeigh(context),
             child: FadeTransition(
               opacity: animation,
               child: Image.asset("images/LogoMoseTransparency.png"),
@@ -132,5 +134,19 @@ class _MoseAppState extends State<MoseApp> with SingleTickerProviderStateMixin {
   void dispose() {
     controller.dispose();
     super.dispose();
+  }
+
+  double getWidth(BuildContext context) {
+    var deviceData = MediaQuery.of(context);
+    return deviceData.size.width < 350
+        ? deviceData.size.width * 0.3
+        : deviceData.size.width * 0.4;
+  }
+
+  double getHeigh(BuildContext context) {
+    var deviceData = MediaQuery.of(context);
+    return deviceData.size.width < 350
+        ? deviceData.size.height * 0.3
+        : deviceData.size.height * 0.4;
   }
 }
