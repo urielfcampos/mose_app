@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 generateObjetivos(String Objetivos) {}
 
@@ -661,10 +662,19 @@ class _ObjetivoListState extends State<ObjetivoList> {
             ),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.0)),
-            onPressed: () {},
+            onPressed: _launchURL,
           ),
         ),
       ],
     );
+  }
+
+  _launchURL() async {
+    const url = 'http://10.0.2.2:3000';
+    if (await canLaunch(url)) {
+      launch(url);
+    } else {
+      throw 'could not launch';
+    }
   }
 }

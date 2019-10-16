@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import './AboutPages/introducao.dart';
 import './CompetenciasPages/MainPage.dart';
@@ -122,7 +123,7 @@ class _MoseAppState extends State<MoseApp> with SingleTickerProviderStateMixin {
               ),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0)),
-              onPressed: () {},
+              onPressed: _launchURL,
             ),
           )
         ],
@@ -148,5 +149,14 @@ class _MoseAppState extends State<MoseApp> with SingleTickerProviderStateMixin {
     return deviceData.size.width < 350
         ? deviceData.size.height * 0.3
         : deviceData.size.height * 0.4;
+  }
+
+  _launchURL() async {
+    const url = 'http://10.0.2.2:3000';
+    if (await canLaunch(url)) {
+      launch(url);
+    } else {
+      throw 'could not launch';
+    }
   }
 }
